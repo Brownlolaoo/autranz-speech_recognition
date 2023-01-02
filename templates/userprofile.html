@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link href="static/userprofile.css" rel="stylesheet" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="v13_92">
+      <div class="bline"></div>
+      <div class="v13_93">
+        <div class="v13_94"><span class="v13_95">au</span></div>
+        <span class="v13_96">Tranz</span>
+        <div class="v13_97">
+          <div class="v13_98"></div>
+          <span class="v13_99">Search icon</span>
+        </div>
+        <span class="v13_100">Adewale Ayo{{session.username}}</span>
+        <div class="name"></div>
+        <div class="v13_102">
+          <div class="v13_103"></div>
+          <div class="v13_104"></div>
+        </div>
+        <div class="v40_4"></div>
+      </div>
+      <div class="v13_241">
+        <span class="v13_242">User Profile</span
+        ><span class="v13_243"> User info</span
+        ><span class="v13_244"> Transcriptions</span
+        ><span class="v13_245"> Setting</span
+        ><span class="v13_246"> Favourite</span
+        ><span class="v13_247"> Notifications</span
+        ><span class="v13_249">Log out</span>
+        <div class="v14_6">
+          <div class="v14_4"></div>
+          <div class="v14_5"></div>
+        </div>
+        <div class="v14_14">
+          <div class="v14_11"></div>
+          <div class="v14_12"></div>
+          <div class="v14_13"></div>
+        </div>
+        <div class="v14_9"><div class="v14_8"></div></div>
+        <div class="v14_18">
+          <div class="v14_16"></div>
+          <div class="v14_17"></div>
+        </div>
+        <div class="v14_22">
+          <div class="v14_20"></div>
+          <div class="v14_21"></div>
+        </div>
+        <div class="v40_15">
+          <div class="v40_12"></div>
+          <div class="v40_13"></div>
+          <div class="v40_14"></div>
+        </div>
+      </div>
+      <div class="profile-picture"></div>
+      <input
+        class="profile-name"
+        id="username"
+        type="text"
+        placeholder="enter your username"
+      />
+      <input
+        class="profile-location"
+        id="location"
+        type="text"
+        placeholder="Seattle, USA"
+      />
+    
+      <a href="{{url_for('userprofile', userid=user)}}" class="btn btn-primary">Edit</a>
+     
+       <form action="{{ url_for('userprofile') }}" method="post">
+       {% if mesage is defined and mesage %}
+		   <div >{{ msg }}</div>
+	     {% endif %}
+      <div class="info-name">
+        <label for="username" class="Name">Username</label><br />
+        <input
+          class="usrname"
+          id="username"
+          type="text"
+          placeholder="enter your Fname"
+          name="username"
+         value="{{ editUser.username }}"
+        />
+      </div>
+      <div class="info-email">
+        <label for="fname" class="email Address">First Name</label>
+        <input
+          class="Emailid"
+          id="fname"
+          type="text"
+          name="fname"
+          size="30"
+          placeholder="Enter your Full name"
+          name="fname"
+         value="{{ editUser.fname }}"
+          required
+        />
+      </div>
+      <div class="info-location">
+        <label for=" Lname" class="Location">Last Name</label>
+        <input
+          class="location"
+          id="lname"
+          name="lname"
+          type="text"
+          placeholder="enter your last name"
+          name="lname"
+         value="{{ editUser.lname }}"
+        />
+      </div>
+      <div class="info-Lname">
+        <label for="email" class="Last Name">Enter your Email address</label>
+        <input
+          class="Lname"
+          id="email"
+          name="email"
+          type="text"
+          placeholder="enter your emaill"
+           name="email"
+           value="{{ editUser.email }}"
+        />
+      </div>
+        <div class="info-postal">
+        <label for="password" class="Postal code">Change Password</label>
+        <input
+          class="postal code" value="{{ editUser.password }}"
+          id="password" name="password" type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required placeholder="Enter Your Password" class="textbox"/>
+      </div>
+      <input type="hidden" id="userid" name="userid" value="{{ editUser.userid }}">
+      <div class="info-submit">
+        
+        <input class="submit" type="submit" value="save Changes" />
+      </div>
+    </form>
+    </div>
+  </body>
+</html>
+
