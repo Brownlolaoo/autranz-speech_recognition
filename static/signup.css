@@ -79,14 +79,14 @@ body {
     text-align: left;
 }
 .msg{
-    width: 96px;
-        color: rgba(0, 0, 0, 1);
+    
+        color:red;
         position: absolute;
-        top: 92px;
+        top: 50px;
         left: 731px;
         font-family: Montserrat;
         font-weight: Regular;
-        font-size: 16px;
+        font-size: 26px;
         opacity: 1;
         text-align: left;
 }

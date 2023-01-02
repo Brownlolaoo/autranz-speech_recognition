@@ -90,10 +90,12 @@ def signup():
             'SELECT * FROM speech WHERE username = % s', (username, ))
         account = cursor.fetchone()
         mail = eursor.fetchone()
-        if account:
-            msg = 'Username already exists !'
+        if account and mail:
+            msg = 'Username and Email already exists !'
         elif mail:
             msg = 'email already exists !'
+        elif account:
+            msg = 'Username already exists !'
         elif not re.match(r'[^@]+@[^@]+\.[^@]+', email):
             msg = 'Invalid email address !'
         elif not username or not password or not email:

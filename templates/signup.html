@@ -7,6 +7,7 @@
     </head>
     <body>
         <div class="v3_177">
+          
             <div class="v3_178">
             <div class="v3_196">
                 <span class="v3_197">au</span>
@@ -15,7 +16,7 @@
             <span class="v8_272">Welcome to AuTranz Get  Started With your Transcriptions.  </span>
         </div>
         <form action="{{ url_for('signup') }}" method="post" onsubmit="return validation()" name="form">
-          <div class="msg">{{ msg }}</div>
+          <span class="msg">{{ msg }}</span>
         <label for ="username" class="v8_275">USERNAME</label> 
          <input class="v8_278"  id="username" name="username" type="text" placeholder="Enter Your Username" class="textbox" required/>
         <label for ="email" class="v8_279">EMAIL</label>
@@ -25,7 +26,7 @@
         <label for="re-enter password" class="v8_305">RENTER-PASSWORD</label>
         <input class="v8_314" name="password" type="password" id="confirm_password" required placeholder="Confirm Your Password" class="textbox"/>
        <label class="v8_319">I Agree with the terms and conditions
-        <input  type="checkbox"></label>
+        <input  type="checkbox" required></label>
         <div class="v8_320"> <input class="vN8_321"  type="submit" value="Sign Up" onclick='Javascript:checkEmail();'></div>
         <input
           class="Emailid"
