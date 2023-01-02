@@ -1,0 +1,843 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 14px;
+}
+
+.v13_93 {
+    width: 100%;
+    height: 50px;
+    background: rgba(58, 134, 255, 1);
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    overflow: hidden;
+}
+
+.v13_94 {
+    width: 30px;
+    height: 30px;
+    background: rgba(255, 255, 255, 1);
+    opacity: 1;
+    position: absolute;
+    top: 10px;
+    left: 23px;
+    overflow: hidden;
+}
+
+.v13_95 {
+    width: 21px;
+    color: rgba(0, 0, 0, 1);
+    position: absolute;
+    top: 5px;
+    left: 4px;
+    font-family: Montserrat;
+    font-weight: Medium;
+    font-size: 16px;
+    opacity: 1;
+    text-align: left;
+}
+
+.v13_96 {
+    width: 69px;
+    color: rgba(255, 255, 255, 1);
+    position: absolute;
+    top: 19px;
+    left: 53px;
+    font-family: Montserrat;
+    font-weight: Bold;
+    font-size: 24px;
+    opacity: 1;
+    text-align: left;
+}
+
+.v13_97 {
+    width: 487px;
+    height: 30px;
+    background: rgba(255, 255, 255, 0.5);
+    opacity: 1;
+    position: absolute;
+    top: 10px;
+    left: 164px;
+    overflow: hidden;
+}
+
+.v13_98 {
+    width: 13px;
+    height: 20px;
+    background: rgba(255, 255, 255, 1);
+    opacity: 1;
+    position: absolute;
+    top: 5px;
+    left: 6px;
+}
+
+.v13_99 {
+    width: 56px;
+    color: rgba(255, 255, 255, 1);
+    position: absolute;
+    top: 5px;
+    left: 40px;
+    font-family: Montserrat;
+    font-weight: Medium;
+    font-size: 16px;
+    opacity: 1;
+    text-align: left;
+}
+
+.v13_100 {
+    width: 107px;
+    color: rgba(255, 255, 255, 1);
+    position: absolute;
+    top: 13px;
+    left: 1098px;
+    font-family: Montserrat;
+    font-weight: SemiBold;
+    font-size: 16px;
+    opacity: 1;
+    text-align: left;
+}
+
+.name {
+    color: #fff;
+}
+
+.v13_102 {
+    width: 40px;
+    height: 40px;
+    background: url("../images/v13_102.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 5px;
+    left: 1233px;
+    overflow: hidden;
+}
+
+.v13_103 {
+    width: 10px;
+    height: 10px;
+    background: url("../images/v13_103.png");
+    opacity: 1;
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    border: 1px solid rgba(255, 255, 255, 1);
+}
+
+.v13_104 {
+    width: 40px;
+    height: 40px;
+    background: url("../images/v13_104.png");
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border: 1px solid rgba(255, 255, 255, 1);
+}
+
+.v40_4 {
+    width: 45px;
+    height: 40px;
+    background: url("../images/v40_4.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 5px;
+    left: 1038px;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    overflow: hidden;
+}
+
+.v13_92 {
+    width: 100%;
+    height: 840px;
+    background: rgba(255, 255, 255, 1);
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+}
+
+.v13_241 {
+    width: 325px;
+    height: 840px;
+    background: url("../images/v13_241.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 2px;
+    left: 0px;
+    overflow: hidden;
+}
+
+.v13_242 {
+    width: 147px;
+    color: rgba(0, 0, 0, 1);
+    position: absolute;
+    top: 49px;
+    left: 59px;
+    font-family: Montserrat;
+    font-weight: Bold;
+    font-size: 24px;
+    opacity: 1;
+    text-align: left;
+}
+
+.v13_243 {
+    width: 109px;
+    color: rgba(0, 0, 0, 1);
+    position: absolute;
+    top: 144px;
+    left: 63px;
+    font-family: Montserrat;
+    font-weight: SemiBold;
+    font-size: 20px;
+    opacity: 1;
+    text-align: left;
+}
+
+.v13_244 {
+    width: 160px;
+    color: rgba(0, 0, 0, 1);
+    position: absolute;
+    top: 209px;
+    left: 63px;
+    font-family: Montserrat;
+    font-weight: Medium;
+    font-size: 20px;
+    opacity: 1;
+    text-align: left;
+}
+
+.v13_245 {
+    width: 91px;
+    color: rgba(0, 0, 0, 1);
+    position: absolute;
+    top: 274px;
+    left: 63px;
+    font-family: Montserrat;
+    font-weight: Medium;
+    font-size: 20px;
+    opacity: 1;
+    text-align: left;
+}
+
+.v13_246 {
+    width: 112px;
+    color: rgba(0, 0, 0, 1);
+    position: absolute;
+    top: 339px;
+    left: 63px;
+    font-family: Montserrat;
+    font-weight: Medium;
+    font-size: 20px;
+    opacity: 1;
+    text-align: left;
+}
+
+.v13_247 {
+    width: 146px;
+    color: rgba(0, 0, 0, 1);
+    position: absolute;
+    top: 414px;
+    left: 66px;
+    font-family: Montserrat;
+    font-weight: Medium;
+    font-size: 20px;
+    opacity: 1;
+    text-align: left;
+}
+
+.v13_249 {
+    width: 63px;
+    color: rgba(255, 61, 0, 1);
+    position: absolute;
+    top: 721px;
+    left: 87px;
+    font-family: Montserrat;
+    font-weight: Medium;
+    font-size: 16px;
+    opacity: 1;
+    text-align: left;
+}
+
+.v14_6 {
+    width: 17px;
+    height: 21px;
+    background: url("../images/v14_6.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 145px;
+    left: 42px;
+    overflow: hidden;
+}
+
+.v14_4 {
+    width: 17px;
+    height: 7px;
+    background: url("../images/v14_4.png");
+    opacity: 1;
+    position: absolute;
+    top: 14px;
+    left: 0px;
+    border: 2px solid rgba(0, 0, 0, 1);
+}
+
+.v14_5 {
+    width: 8px;
+    height: 9px;
+    background: url("../images/v14_5.png");
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 4px;
+    border: 2px solid rgba(0, 0, 0, 1);
+}
+
+.v14_14 {
+    width: 16px;
+    height: 21px;
+    background: url("../images/v14_14.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 212px;
+    left: 44px;
+    overflow: hidden;
+}
+
+.v14_11 {
+    width: 16px;
+    height: 21px;
+    background: url("../images/v14_11.png");
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border: 1px solid rgba(0, 0, 0, 1);
+}
+
+.v14_12 {
+    width: 8px;
+    height: 8px;
+    background: url("../images/v14_12.png");
+    opacity: 1;
+    position: absolute;
+    top: 7px;
+    left: 3px;
+    border: 1px solid rgba(0, 0, 0, 1);
+}
+
+.v14_13 {
+    width: 0px;
+    background: url("../images/v14_13.png");
+    opacity: 1;
+    position: absolute;
+    top: 15px;
+    left: 11px;
+    border: 1px solid rgba(0, 0, 0, 1);
+}
+
+.v14_9 {
+    width: 22px;
+    height: 21px;
+    background: url("../images/v14_9.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 342px;
+    left: 33px;
+    overflow: hidden;
+}
+
+.v14_8 {
+    width: 22px;
+    height: 21px;
+    background: url("../images/v14_8.png");
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border: 1px solid rgba(0, 0, 0, 1);
+}
+
+.v14_18 {
+    width: 20px;
+    height: 21px;
+    background: url("../images/v14_18.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 277px;
+    left: 40px;
+    overflow: hidden;
+}
+
+.v14_16 {
+    width: 5px;
+    height: 5px;
+    background: url("../images/v14_16.png");
+    opacity: 1;
+    position: absolute;
+    top: 7px;
+    left: 7px;
+    border: 1px solid rgba(0, 0, 0, 1);
+}
+
+.v14_17 {
+    width: 20px;
+    height: 21px;
+    background: url("../images/v14_17.png");
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border: 1px solid rgba(0, 0, 0, 1);
+}
+
+.v14_22 {
+    width: 18px;
+    height: 21px;
+    background: url("../images/v14_22.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 414px;
+    left: 35px;
+    overflow: hidden;
+}
+
+.v14_20 {
+    width: 18px;
+    height: 16px;
+    background: url("../images/v14_20.png");
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border: 1px solid rgba(0, 0, 0, 1);
+}
+
+.v14_21 {
+    width: 3px;
+    height: 1px;
+    background: url("../images/v14_21.png");
+    opacity: 1;
+    position: absolute;
+    top: 20px;
+    left: 7px;
+    border: 1px solid rgba(0, 0, 0, 1);
+}
+
+.v40_15 {
+    width: 20px;
+    height: 21px;
+    background: url("../images/v40_15.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 741px;
+    left: 71px;
+    transform: rotate(-179deg);
+    overflow: hidden;
+}
+
+.v40_12 {
+    width: 6px;
+    height: 21px;
+    background: url("../images/v40_12.png");
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border: 2px solid rgba(255, 61, 0, 1);
+    transform: rotate(-179deg);
+}
+
+.v40_13 {
+    width: 5px;
+    height: 11px;
+    background: url("../images/v40_13.png");
+    opacity: 1;
+    position: absolute;
+    top: 5px;
+    left: 15px;
+    border: 2px solid rgba(255, 61, 0, 1);
+    transform: rotate(-179deg);
+}
+
+.v40_14 {
+    width: 13px;
+    background: url("../images/v40_14.png");
+    opacity: 1;
+    position: absolute;
+    top: 11px;
+    left: 7px;
+    border: 2px solid rgba(255, 61, 0, 1);
+    transform: rotate(-179deg);
+}
+
+.profile-picture {
+    width: 149px;
+    height: 130px;
+    background: url("../images/v13_250.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 141px;
+    left: 420px;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    overflow: hidden;
+}
+
+.profile-name {
+    width: 350px;
+    color: rgba(0, 0, 0, 1);
+    position: absolute;
+    top: 177px;
+    left: 625px;
+    font-family: Montserrat;
+    font-weight: Bold;
+    font-size: 32px;
+    opacity: 1;
+    text-align: left;
+}
+
+.profile-location {
+    width: 130px;
+    color: rgba(0, 0, 0, 0.699999988079071);
+    position: absolute;
+    top: 233px;
+    left: 632px;
+    font-family: Montserrat;
+    font-weight: Medium;
+    font-size: 16px;
+    opacity: 1;
+    text-align: center;
+}
+
+.info-name {
+    width: 305px;
+    height: 54px;
+    background: rgba(255, 255, 255, 1);
+    opacity: 1;
+    position: absolute;
+    top: 343px;
+    left: 405px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.usrname {
+    width: 241px;
+    height: 40px;
+    color: rgba(136, 136, 136, 1);
+    position: absolute;
+    top: 17px;
+    left: 0px;
+    font-family: Montserrat;
+    font-weight: Medium;
+    font-size: 16px;
+    opacity: 1;
+    text-align: center;
+
+}
+
+.info-email {
+    width: 305px;
+    height: 54px;
+    background: rgba(255, 255, 255, 1);
+    opacity: 1;
+    position: absolute;
+    top: 454px;
+    left: 406px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    overflow: hidden;
+}
+
+.Emailid {
+    width: 241px;
+    height: 40px;
+    color: rgba(136, 136, 136, 1);
+    position: absolute;
+    top: 17px;
+    left: 0px;
+    font-family: Montserrat;
+    font-weight: Medium;
+    font-size: 16px;
+    opacity: 1;
+    text-align: center;
+}
+
+.name {
+    color: #fff;
+}
+
+.info-location {
+    width: 305px;
+    height: 54px;
+    background: rgba(255, 255, 255, 1);
+    opacity: 1;
+    position: absolute;
+    top: 565px;
+    left: 406px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    overflow: hidden;
+}
+
+.location {
+    width: 241px;
+    height: 40px;
+    color: rgba(0, 0, 0, 0.699999988079071);
+    position: absolute;
+    top: 17px;
+    left: 0px;
+    font-family: Montserrat;
+    font-weight: Medium;
+    font-size: 16px;
+    opacity: 1;
+    text-align: center;
+}
+
+.info-Lname {
+    width: 305px;
+    height: 54px;
+    background: rgba(255, 255, 255, 1);
+    opacity: 1;
+    position: absolute;
+    top: 343px;
+    left: 875px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    overflow: hidden;
+}
+
+.Lname {
+    width: 241px;
+    height: 40px;
+    color: rgba(0, 0, 0, 0.699999988079071);
+    position: absolute;
+    top: 17px;
+    left: 0px;
+    font-family: Montserrat;
+    font-weight: Medium;
+    font-size: 16px;
+    opacity: 1;
+    text-align: center;
+}
+
+.info-phone {
+    width: 305px;
+    height: 54px;
+    background: rgba(255, 255, 255, 1);
+    opacity: 1;
+    position: absolute;
+    top: 456px;
+    left: 877px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    overflow: hidden;
+}
+
+.phoneNo {
+    width: 241px;
+    height: 40px;
+    color: rgba(0, 0, 0, 0.699999988079071);
+    position: absolute;
+    top: 17px;
+    left: 0px;
+    font-family: Montserrat;
+    font-weight: Medium;
+    font-size: 16px;
+    opacity: 1;
+    text-align: center;
+}
+
+.info-postal {
+    width: 305px;
+    height: 54px;
+    background: rgba(255, 255, 255, 1);
+    opacity: 1;
+    position: absolute;
+    top: 569px;
+    left: 879px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    overflow: hidden;
+}
+
+.postal code {
+    width: 241px;
+    height: 40px;
+    color: rgba(0, 0, 0, 0.699999988079071);
+    position: absolute;
+    top: 17px;
+    left: 0px;
+    font-family: Montserrat;
+    font-weight: Medium;
+    font-size: 16px;
+    opacity: 1;
+    text-align: center;
+}
+
+.info-submit input[type=submit] {
+    width: 258px;
+    height: 54px;
+    background: rgba(58, 134, 255, 1);
+    opacity: 1;
+    position: absolute;
+    top: 684px;
+    left: 655px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    overflow: hidden;
+}
+
+.submit {
+    width: 114px;
+    color: rgba(255, 255, 255, 1);
+    position: absolute;
+    top: 17px;
+    left: 72px;
+    font-family: Montserrat;
+    font-weight: Medium;
+    font-size: 16px;
+    opacity: 1;
+    text-align: center;
+}
+
+.label-name {
+    width: 50px;
+    height: 40px;
+    color: rgba(0, 0, 0, 1);
+    position: absolute;
+    top: 400px;
+    left: 408px;
+    font-family: Montserrat;
+    font-weight: Medium;
+    font-size: 16px;
+    opacity: 1;
+    text-align: center;
+}
+
+.label-email {
+    width: 117px;
+    color: rgba(0, 0, 0, 1);
+    position: absolute;
+    top: 423px;
+    left: 406px;
+    font-family: Montserrat;
+    font-weight: Medium;
+    font-size: 16px;
+    opacity: 1;
+    text-align: center;
+}
+
+.label-Lname {
+    width: 71px;
+    color: rgba(0, 0, 0, 1);
+    position: absolute;
+    top: 534px;
+    left: 414px;
+    font-family: Montserrat;
+    font-weight: medium;
+    font-size: 16px;
+    opacity: 1;
+    text-align: center;
+}
+
+.label-Location {
+    width: 88px;
+    color: rgba(0, 0, 0, 1);
+    position: absolute;
+    top: 308px;
+    left: 876px;
+    font-family: Montserrat;
+    font-weight: Medium;
+    font-size: 16px;
+    opacity: 1;
+    text-align: center;
+}
+
+.label-phone {
+    width: 126px;
+    color: rgba(0, 0, 0, 1);
+    position: absolute;
+    top: 421px;
+    left: 879px;
+    font-family: Montserrat;
+    font-weight: Medium;
+    font-size: 16px;
+    opacity: 1;
+    text-align: center;
+}
+
+.label-postal {
+    width: 97px;
+    color: rgba(0, 0, 0, 1);
+    position: absolute;
+    top: 534px;
+    left: 874px;
+    font-family: Montserrat;
+    font-weight: Medium;
+    font-size: 16px;
+    opacity: 1;
+    text-align: center;
+}
+.bline{
+    border-left: 6px solid;
+        border-color: rgba(58, 134, 255, 1);
+        height: 2000px;
+        position: absolute;
+        left: 20%;
+        margin-left: -3px;
+        top: 50px;
+}
