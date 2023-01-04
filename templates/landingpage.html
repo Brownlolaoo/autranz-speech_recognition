@@ -14,9 +14,31 @@
         <link rel="stylesheet" href="static/landingpage.css">
     </head>
     <body>
+        <nav class="navbar">
+        <div class="logo">Autranz</div>
+        <ul class="nav-links">
+            <input type="checkbox" id="checkbox_toggle"/>
+            <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+            <div class="menu">
+            <li><a href="/">Home</a></li>
+             <li><a href="/">About</a></li>
+             <li class="services">
+             <a href="/">Services</a>
+             <ul class="dropdown">
+                <li><a href="/">Dropdown 1 </a></li>
+                <li><a href="/">Dropdown 2</a></li>
+                <li><a href="/">Dropdown 3</a></li>
+                <li><a href="/">Dropdown 2</a></li>
+                <li><a href="/">Dropdown 2</a></li>
+             </ul>
+            </li>
+            <li><a href="/">Pricing</a></li>
+            <li><a href="/">Contact</a></li>
+        </div>
+    </ul>
+</nav>
       <section class="first-section">
     <div class="general">
-    
         <div  class="alltext">
         <div class="text1">
            <article class="Part2">
@@ -36,20 +58,28 @@
           </div>
           <div class="slideshow-container">
           <div class= "cash fade">
-            <div class="numbertext">1 / 3</div>
-            <img class="imager" src="{{url_for('static', filename = 'images/update1.jpg')}}">
             
+            <img class="imager" src="{{url_for('static', filename = 'images/update1.jpg')}}">
             </div>
 
             <div class="cash fade">
-           <div class="numbertext">2 / 3</div>
-            <img class="imager" src="{{url_for('static', filename = 'images/update2.jpg')}}">
+            <img class="imager1" src="{{url_for('static', filename = 'images/update2.jpg')}}">
              
               </div>
 
              <div class="cash fade">
-              <div class="numbertext">3 / 3</div>
-              <img class="imager" src="{{url_for('static', filename = 'images/update1.jpg')}}">
+              
+              <img class="imager2" src="{{url_for('static', filename = 'images/update6.jpg')}}">
+                
+              </div>
+               <div class="cash fade">
+              
+              <img class="imager3" src="{{url_for('static', filename = 'images/update4.jpg')}}">
+                
+              </div>
+               <div class="cash fade">
+              
+              <img class="imager4" src="{{url_for('static', filename = 'images/update5.jpg')}}">
                 
               </div>
              </div>
@@ -58,11 +88,55 @@
            <span class="dot"></span> 
             <span class="dot"></span> 
               <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span> 
               </div>
 
 <br> 
            </div>
            </section>
+
+
+           
+        <section class="third-section">
+        <h2>Autranz features
+        </h2>
+        <div class="speech-1">
+          <div class= "speech-11"> 
+          <img src="{{url_for('static', filename = 'images/feature1.jpg')}}" alt=""/>
+          </div>
+            <article class="speech">
+             <h3>Fast and reliable payment</h3>
+             <p>With this platform, you may conduct quick transactions with your friends,
+              business associates, and others in a matter of seconds without experiencing any errors.</p>
+            </article>
+      
+        </div>
+        <div class="speech-1">
+            <article class="speech2">
+             <h3>Developer friendly</h3>
+             <p>With this platform, you may conduct quick transactions with your friends,
+              business associates, and others in a matter of seconds without experiencing any errors.</p>
+            </article>
+
+             <div class= "speech-22"> 
+          <img src={eight} alt=""/>
+          </div>
+        </div>
+        
+        <div class="speech-1">
+          <div class= "speech-23"> 
+          <img src={nine} alt=""/>
+          </div>
+            <article class="speech">
+             <h3>Financial Freedom</h3>
+             <p>With this platform, you may conduct quick transactions with your friends,
+              business associates, and others in a matter of seconds without experiencing any errors.</p>
+            </article>
+        
+        </div>
+        </section>
+        
         <script>
        let slideIndex = 0;
 showSlides();
