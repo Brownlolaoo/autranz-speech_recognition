@@ -4,6 +4,11 @@ padding: 0;
 box-sizing: border-box;
 
 }
+.logo p{
+    font-size: 15px;
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
 a {
 
 text-decoration: none;
@@ -38,13 +43,15 @@ color: blue;
 .logo {
 font-weight: bold;
 font-size: 32px;
+display: flex;
+flex-direction: row;
 
 }
 .menu {
-
+     padding-right: 5rem;
     display: flex;
 
-    gap: 1em;
+    gap: 2em;
 
     font-size: 18px;
 
@@ -405,9 +412,24 @@ input[type=checkbox] {
 .third-section .speech-11 {
     margin-top: 4rem;
     margin-left: 11rem;
+    /*for chrome*/
     -webkit-animation: linear infinite;
     -webkit-animation-duration: 3s;
         -webkit-animation-name: run;
+
+        /*for firefox*/
+        -moz-animation: linear infinite;
+            -moz-animation-duration: 3s;
+            -moz-animation-name: run;
+        
+            /* for opera*/
+            -moz-animation: linear infinite;
+            -o-animation-duration: 3s;
+            -o-animation-name: run;
+        
+            /* Standard syntax*/
+            animation-duration: 3s;
+            animation-name: run;
         animation-direction: alternate;
 }
 
@@ -496,9 +518,24 @@ input[type=checkbox] {
 }
 .third-section .speech-22 {
     margin-top: 3.5rem;
+    /*for chrome*/
     -webkit-animation: linear infinite;
     -webkit-animation-duration: 3s;
     -webkit-animation-name: sun;
+
+    /*for firefox*/
+    -moz-animation: linear infinite;
+        -moz-animation-duration: 3s;
+        -moz-animation-name: sun;
+    
+        /* for opera*/
+        -moz-animation: linear infinite;
+        -o-animation-duration: 3s;
+        -o-animation-name: sun;
+    
+        /* Standard syntax*/
+        animation-duration: 3s;
+        animation-name: sun;
     animation-direction: alternate;
 }
 @-webkit-keyframes sun {
@@ -516,9 +553,24 @@ input[type=checkbox] {
 }
 .third-section .speech-23 {
     margin-top: 3.5rem;
+    /*for chrome*/
     -webkit-animation: linear infinite;
         -webkit-animation-duration: 3s;
         -webkit-animation-name: pun;
+        /*for firefox*/
+        -moz-animation: linear infinite;
+            -moz-animation-duration: 3s;
+            -moz-animation-name: pun;
+        
+            /* for opera*/
+            -moz-animation: linear infinite;
+            -o-animation-duration: 3s;
+            -o-animation-name: pun;
+        
+            /* Standard syntax*/
+            animation-duration: 3s;
+            animation-name: pun;
+
         animation-direction: alternate;
 }
 @-webkit-keyframes pun {
@@ -580,6 +632,14 @@ input[type=checkbox] {
     font-weight: bolder;
     font-size: 40px;
 }
+.abpix{
+    font-size: 30px;
+    color: blue;
+    font-family: 'Courier New', Courier, monospace;
+    padding-bottom: 1rem;
+    padding-top: 3rem;
+    padding-left:40rem;
+}
 .team{
     display: grid;
         grid-template-columns: 50% 50%;
@@ -608,9 +668,9 @@ input[type=checkbox] {
     padding-bottom: 1rem;
 }
 .aumeju{
-    width:23%;
+    width:18%;
     height:70%;
-    margin-left: 26rem;
+    margin-left: 36rem;
     border-radius: 50%;
     border: 2px solid yellow;
 }
@@ -621,6 +681,15 @@ input[type=checkbox] {
     gap: 1%;
     margin-top: 2rem;
     margin-left: -3rem;
+}
+.linautranz{
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+    padding-left: 40rem;
+    font-size: 30px;
+    background-color: white;
+    border-color: blue;
+    border: 4px solid yellow;
 }
 /* APPLYING MEDIA QUERIES */
 
