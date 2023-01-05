@@ -365,7 +365,7 @@ input[type=checkbox] {
     font-size: 42px;
     line-height: 42px;
     text-align: center;
-
+    font-family: 'Courier New', Courier, monospace;
     color: blue;
 }
 
@@ -534,8 +534,94 @@ input[type=checkbox] {
 
 
 }
+/*about section*/
+.about-section{
+    background: rgba(58, 134, 255, 1);
+    border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+}
+.about-section h2 {
+    text-align: center;
+    padding-top: 1.5rem;
+    font-family:'Courier New', Courier, monospace;
+    font-style: normal;
+    font-weight: bolder;
+    line-height: 42px;
+    text-align: center;
+    font-size: 40px;
+    color: blue;
+}
+.aboutblab{
+    margin-top: 1rem;
+    border: 5px solid blue;
+    background-color: #1c26d7;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+        border-bottom-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+}
+.aboutblab p {
+    padding-left: 2rem;
+        padding-right: 2rem;
+        font-family: 'Courier New', Courier, monospace;
+    color: white;
+    font-size: 20px;
+    text-align:center;
 
+}
 
+.stronger h3 {
+    font-family: 'Courier New', Courier, monospace;
+    padding-left: 27rem;
+    padding-top: 2rem;
+    color:white;
+    font-weight: bolder;
+    font-size: 40px;
+}
+.team{
+    display: grid;
+        grid-template-columns: 50% 50%;
+        gap: 1%;
+        margin-top: 2rem;
+        margin-left: -3rem;
+}
+.aupics{
+    display: flex;
+    flex-direction: column;
+}
+.talks h5{
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+        color: white;
+    padding-bottom: 1rem;
+}
+.talks{
+    display: flex;
+    flex-direction: column;
+}
+.social{
+    display: flex;
+    padding-left: 14rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.aumeju{
+    width:23%;
+    height:70%;
+    margin-left: 26rem;
+    border-radius: 50%;
+    border: 2px solid yellow;
+}
+
+.team1 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 1%;
+    margin-top: 2rem;
+    margin-left: -3rem;
+}
 /* APPLYING MEDIA QUERIES */
 
 @media (max-width: 768px) {
@@ -603,3 +689,4 @@ input[type=checkbox] {
     }
 
 }
+
