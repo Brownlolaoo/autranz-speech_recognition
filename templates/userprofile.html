@@ -27,13 +27,13 @@
         <div class="v40_4"></div>
       </div>
       <div class="v13_241">
-        <span class="v13_242">User Profile</span
-        ><span class="v13_243"> User info</span
-        ><span class="v13_244"><a  href="{{url_for('index')}}"> Transcriptions</span></a>
-          <span class="v13_245"> Setting</span
-        ><span class="v13_246"> Favourite</span
-        ><span class="v13_247"> Notifications</span
-        ><span class="v13_249">Log out</span>
+        <span class="v13_242">User Profile</span>
+        <a  href="{{url_for('userprofile', user=session.userid)}}"><span class="v13_243"> User info</span></a>
+          <a  href="{{url_for('index', user=session.userid)}}"><span class="v13_244"> Transcribe</span></a>
+          <a  href="{{url_for('index')}}"><span class="v13_245"> Transcriptions</span></a>
+            <a  href="{{url_for('index')}}"><span class="v13_246"> Translate</span></a>
+            <a href="{{ url_for('logout') }}" class="btn"><span class="v13_249">Logout</span></a>
+       
         <div class="v14_6">
           <div class="v14_4"></div>
           <div class="v14_5"></div>
@@ -48,10 +48,6 @@
           <div class="v14_16"></div>
           <div class="v14_17"></div>
         </div>
-        <div class="v14_22">
-          <div class="v14_20"></div>
-          <div class="v14_21"></div>
-        </div>
         <div class="v40_15">
           <div class="v40_12"></div>
           <div class="v40_13"></div>
@@ -59,14 +55,9 @@
         </div>
       </div>
       <div class="profile-picture"></div>
-      <h1></h1>
-      <input
-        class="profile-location"
-        id="location"
-        type="text"
-        placeholder="Seattle, USA"
-      />
-    
+       <div class="profile-picturehi">  <h1>Hi there,</h1></div>
+      <div class="profile-picturef">  <h1> {{session.fname}}</h1></div>
+      <div class="profile-picturel">  <h1> {{session.lname}}</h1></div>
      
        <form action="{{ url_for('userprofile', userid=userid) }}" method="post">
        {% if mesage is defined and mesage %}
