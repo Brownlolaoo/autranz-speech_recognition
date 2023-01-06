@@ -1,7 +1,10 @@
-from flask import Flask, render_template, request, redirect, url_for, session
+from flask import Flask, render_template, request, jsonify,  redirect, url_for, session
+import requests
+import os
 from flask_mysqldb import MySQL
 import MySQLdb.cursors
 import re
+import speech_recognition as sr
 
 app = Flask(__name__)
 
@@ -45,9 +48,9 @@ def login():
 def userprofile():
     msg = ''
     if 'loggedin' in session:
-        editUserId = request.args.get('userid')
+        userid = request.args.get('userid')
         cursor = mysql.connection.cursor(MySQLdb.cursors.DictCursor)
-        cursor.execute('SELECT * FROM speech WHERE userid = % s', (editUserId, ))
+        cursor.execute('SELECT * FROM speech WHERE userid = % s', (userid, ))
         editUser = cursor.fetchone()
         if request.method == 'POST' and 'username' in request.form and 'email' in request.form and 'fname' in request.form and 'lname' in request.form:
             username = request.form['username']
@@ -62,14 +65,11 @@ def userprofile():
                     username, email, fname, lname, (userId, ), ))
                 mysql.connection.commit()
                 msg = 'User updated !'
-                return redirect(url_for('users'))
+                return redirect(url_for('userprofile', userid=userid))
         elif request.method == 'POST':
             msg = 'Please fill out the form !'
-        return render_template("userprofile.html", msg=msg, editUser=editUser)
+        return render_template("userprofile.html", msg=msg, editUser=editUser, userid=userid)
     return redirect(url_for('userprofile'))
-
-@app.route('/logout')
-
 
 
 @app.route('/signup', methods=['GET', 'POST'])
@@ -108,6 +108,54 @@ def signup():
     elif request.method == 'POST':
         msg = 'Please fill out the form !'
     return render_template('signup.html', msg=msg)
+
+
+@app.route('/index')
+def index():
+    return render_template('index.html')
+
+
+@app.route('/transcribe', methods=['POST'])
+def transcribe():
+    transcribed_text = ''
+    # Get the audio file from the request
+    if "file" not in request.files:
+        return redirect(request.url)
+
+    audio_file = request.files['file']
+    if audio_file.filename == '':
+        return redirect(request.url)
+
+    if audio_file:
+        # Set the API endpoint and your API key
+        api_endpoint = 'https://api.assemblyai.com/v2/transcript'
+        api_key = os.getenv("API_KEY")
+
+        # Set the headers for the request
+        headers = {
+            'Content-Type': 'audio/wav',
+            'Authorization': f'Token {api_key}'
+        }
+
+        # Send the POST request to the AssemblyAI API
+        response = requests.post(
+            api_endpoint, headers=headers, data=audio_file)
+
+        # Get the transcribed text from the response
+        transcribed_text = response.json()['text']
+
+    # Return the transcribed text as a response
+    # return jsonify({'transcribed_text': transcribed_text})
+    return render_template('index.html', transcript=transcribed_text)
+
+
+
+@app.route('/logout')
+def logout():
+    return render_template('landingpage.html')
+
+if __name__ == '__main__':
+    app.run(debug=True, threaded=True)
 
 
 
