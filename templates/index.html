@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>auTranz</title>
+	</head>
+	<body>
+		<header>
+			<nav class="navbar">
+				<p class="logo">auTranz</p>
+			</nav>
+		</header>
+		<main class="main__container">
+			<div>
+				<h2>Transcibe your audio file</h2>
+			</div>
+			<h1>Upload new File</h1>
+			<form method="post" enctype="multipart/form-data">
+				<input type="file" name="file" />
+				<br />
+				<input
+					type="submit"
+					id="submitButton"
+					value="Transcribe"
+					formaction="/transcribe"
+				/>
+			</form>
+
+			{% if transcript != "" %}
+			<div class="transcript__wrapper">
+				<h1 class="transcript__header">Transcript</h1>
+				<p class="transcript__text">{{ transcript }}</p>
+			</div>
+			{% endif %}
+		</main>
+	</body>
+</html>

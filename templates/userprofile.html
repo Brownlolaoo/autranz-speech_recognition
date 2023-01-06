@@ -18,7 +18,7 @@
           <div class="v13_98"></div>
           <span class="v13_99">Search icon</span>
         </div>
-        <span class="v13_100">Adewale Ayo{{session.username}}</span>
+        <span class="v13_100">{{session.username}}</span>
         <div class="name"></div>
         <div class="v13_102">
           <div class="v13_103"></div>
@@ -29,8 +29,8 @@
       <div class="v13_241">
         <span class="v13_242">User Profile</span
         ><span class="v13_243"> User info</span
-        ><span class="v13_244"> Transcriptions</span
-        ><span class="v13_245"> Setting</span
+        ><span class="v13_244"><a  href="{{url_for('index')}}"> Transcriptions</span></a>
+          <span class="v13_245"> Setting</span
         ><span class="v13_246"> Favourite</span
         ><span class="v13_247"> Notifications</span
         ><span class="v13_249">Log out</span>
@@ -59,12 +59,7 @@
         </div>
       </div>
       <div class="profile-picture"></div>
-      <input
-        class="profile-name"
-        id="username"
-        type="text"
-        placeholder="enter your username"
-      />
+      <h1></h1>
       <input
         class="profile-location"
         id="location"
@@ -72,9 +67,8 @@
         placeholder="Seattle, USA"
       />
     
-      <a href="{{url_for('userprofile', userid=user)}}" class="btn btn-primary">Edit</a>
      
-       <form action="{{ url_for('userprofile') }}" method="post">
+       <form action="{{ url_for('userprofile', userid=userid) }}" method="post">
        {% if mesage is defined and mesage %}
 		   <div >{{ msg }}</div>
 	     {% endif %}
