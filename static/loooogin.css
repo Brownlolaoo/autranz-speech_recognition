@@ -301,6 +301,17 @@ body {
     text-align: left;
 }
 
+.msg {
+    color: red;
+    position: absolute;
+    top: 129px;
+    left: 1013px;
+    font-family: Montserrat;
+    font-weight: Bold;
+    font-size: 22px;
+    opacity: 1;
+    text-align: left;
+}
 .v3_97 {
     width: 406px;
     height: 90px;
@@ -892,3 +903,4 @@ a{
    width:500%;
    height: 500%;
 }
+

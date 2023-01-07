@@ -1,6 +1,8 @@
 from flask import Flask, render_template, request, jsonify,  redirect, url_for, session
-import requests
-import os
+from langdetect import detect
+import pycountry
+import textblob
+from textblob import TextBlob
 from flask_mysqldb import MySQL
 import MySQLdb.cursors
 import re
@@ -37,6 +39,8 @@ def login():
                 session['userid'] = user['userid']
                 userid = user['userid']
                 session['username'] = user['username']
+                session['fname'] = user["fname"];
+                session['lname'] = user["lname"];
                 msg = 'Logged in successfully !'
                 return redirect(url_for('userprofile', userid=userid))
         else:
@@ -48,9 +52,10 @@ def login():
 def userprofile():
     msg = ''
     if 'loggedin' in session:
+        user = session['userid']
         userid = request.args.get('userid')
         cursor = mysql.connection.cursor(MySQLdb.cursors.DictCursor)
-        cursor.execute('SELECT * FROM speech WHERE userid = % s', (userid, ))
+        cursor.execute('SELECT * FROM speech WHERE userid = % s', (user, ))
         editUser = cursor.fetchone()
         if request.method == 'POST' and 'username' in request.form and 'email' in request.form and 'fname' in request.form and 'lname' in request.form:
             username = request.form['username']
@@ -65,10 +70,13 @@ def userprofile():
                     username, email, fname, lname, (userId, ), ))
                 mysql.connection.commit()
                 msg = 'User updated !'
-                return redirect(url_for('userprofile', userid=userid))
+                session['username']= username;
+                session['fname'] = fname;
+                session['lname'] = lname;
+                return redirect(url_for('userprofile', user=user))
         elif request.method == 'POST':
             msg = 'Please fill out the form !'
-        return render_template("userprofile.html", msg=msg, editUser=editUser, userid=userid)
+        return render_template("userprofile.html", msg=msg, editUser=editUser, user=user)
     return redirect(url_for('userprofile'))
 
 
@@ -117,42 +125,41 @@ def index():
 
 @app.route('/transcribe', methods=['POST'])
 def transcribe():
+    if 'loggedin' in session:
+        user = session['userid']
     transcribed_text = ''
     # Get the audio file from the request
     if "file" not in request.files:
         return redirect(request.url)
-
+    
     audio_file = request.files['file']
+    print(audio_file)
     if audio_file.filename == '':
         return redirect(request.url)
+    
+    if audio_file:   
+    # Load the audio file
+        r = sr.Recognizer()
+        with sr.AudioFile(audio_file) as source:
+            audio = r.record(source)
 
-    if audio_file:
-        # Set the API endpoint and your API key
-        api_endpoint = 'https://api.assemblyai.com/v2/transcript'
-        api_key = os.getenv("API_KEY")
-
-        # Set the headers for the request
-        headers = {
-            'Content-Type': 'audio/wav',
-            'Authorization': f'Token {api_key}'
-        }
-
-        # Send the POST request to the AssemblyAI API
-        response = requests.post(
-            api_endpoint, headers=headers, data=audio_file)
-
-        # Get the transcribed text from the response
-        transcribed_text = response.json()['text']
-
-    # Return the transcribed text as a response
-    # return jsonify({'transcribed_text': transcribed_text})
-    return render_template('index.html', transcript=transcribed_text)
+        # Transcribe the audio
+        try:
+            text = r.recognize_google(audio)
+        except sr.UnknownValueError:
+            return "Could not understand audio"
+        except sr.RequestError as e:
+            return f"Error while transcribing: {e}"
+        transcribed_text = text
+    return render_template('index.html', transcript=transcribed_text, user=user)
 
 
 
 @app.route('/logout')
 def logout():
     return render_template('landingpage.html')
+
+
 
 if __name__ == '__main__':
     app.run(debug=True, threaded=True)

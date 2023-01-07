@@ -4,21 +4,65 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="static/index.css">
 		<title>auTranz</title>
 	</head>
 	<body>
 		<header>
-			<nav class="navbar">
-				<p class="logo">auTranz</p>
-			</nav>
+	<div class="v13_92">
+      <div class="bline"></div>
+      <div class="v13_93">
+        <div class="v13_94"><span class="v13_95">au</span></div>
+        <span class="v13_96">Tranz</span>
+        <div class="v13_97">
+          <div class="v13_98"></div>
+          <span class="v13_99">Search icon</span>
+        </div>
+        <span class="v13_100">{{session.username}}</span>
+        <div class="name"></div>
+        <div class="v13_102">
+          <div class="v13_103"></div>
+          <div class="v13_104"></div>
+        </div>
+        <div class="v40_4"></div>
+      </div>
+      <div class="v13_241">
+        <span class="v13_242">Transcribe</span>
+        <a  href="{{url_for('userprofile', user=session.userid)}}"><span class="v13_243"> User info</span></a>
+          <a  href="{{url_for('index', user=session.userid)}}"><span class="v13_244"> Transcribe</span></a>
+          <a  href="{{url_for('index')}}"><span class="v13_245"> Transcriptions</span></a>
+            <a  href="{{url_for('index')}}"><span class="v13_246"> Translate</span></a>
+            <a href="{{ url_for('logout') }}" class="btn"><span class="v13_249">Logout</span></a>
+       
+        <div class="v14_6">
+          <div class="v14_4"></div>
+          <div class="v14_5"></div>
+        </div>
+        <div class="v14_14">
+          <div class="v14_11"></div>
+          <div class="v14_12"></div>
+          <div class="v14_13"></div>
+        </div>
+        <div class="v14_9"><div class="v14_8"></div></div>
+        <div class="v14_18">
+          <div class="v14_16"></div>
+          <div class="v14_17"></div>
+        </div>
+        <div class="v40_15">
+          <div class="v40_12"></div>
+          <div class="v40_13"></div>
+          <div class="v40_14"></div>
+        </div>
+      </div>
 		</header>
-		<main class="main__container">
-			<div>
-				<h2>Transcibe your audio file</h2>
+		<main>
+			<div class="main__container">
+				<h1>Transcribe your audio file</h1>
 			</div>
-			<h1>Upload new File</h1>
+			<div class="npload"><h2>Upload new File</h2></div>
+			<div class="aitranscribe" >
 			<form method="post" enctype="multipart/form-data">
-				<input type="file" name="file" />
+				<input  type="file" name="file" />
 				<br />
 				<input
 					type="submit"
@@ -27,7 +71,7 @@
 					formaction="/transcribe"
 				/>
 			</form>
-
+		</div>
 			{% if transcript != "" %}
 			<div class="transcript__wrapper">
 				<h1 class="transcript__header">Transcript</h1>
