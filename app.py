@@ -1,4 +1,5 @@
 from flask import Flask, render_template, request, jsonify,  redirect, url_for, session
+from flask_googletrans import translator
 from langdetect import detect
 import pycountry
 import textblob
@@ -9,6 +10,8 @@ import re
 import speech_recognition as sr
 
 app = Flask(__name__)
+
+
 
 app.secret_key = 'your secret key'
 
@@ -42,6 +45,7 @@ def login():
                 session['fname'] = user["fname"];
                 session['lname'] = user["lname"];
                 msg = 'Logged in successfully !'
+
                 return redirect(url_for('userprofile', userid=userid))
         else:
             msg = 'Please enter correct email / password !'
