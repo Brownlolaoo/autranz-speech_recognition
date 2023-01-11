@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html>
   <head>
+       <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     <link
       href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
       rel="stylesheet"
     />
     <link href="static/userprofile.css" rel="stylesheet" />
-    <title>Document</title>
+    <title>Autranz</title>
   </head>
   <body>
     <div class="v13_92">
-      <div class="bline"></div>
       <div class="v13_93">
         <div class="v13_94"><span class="v13_95">au</span></div>
         <span class="v13_96">Tranz</span>
@@ -26,39 +29,37 @@
         </div>
         <div class="v40_4"></div>
       </div>
+
+       <nav class="navbar">
+        <div class="logo">Autranz<p>speak, see</p></div>
+        <ul class="nav-links">
+            <input type="checkbox" id="checkbox_toggle"/>
+            <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+            <div class="menu">
+            <a href="#intro"><li>Intro</li></a>
+             <a href="#features"><li>Features</li></a>
+             <a href="#about"><li>About</li></a>
+            <a href="/signup"><li>Sign Up</li></a>
+            <a href="/login"><li>Login</li></a>
+        </div>
+    </ul>
+</nav>
       <div class="v13_241">
         <span class="v13_242">User Profile</span>
         <a  href="{{url_for('userprofile', user=session.userid)}}"><span class="v13_243"> User info</span></a>
           <a  href="{{url_for('index', user=session.userid)}}"><span class="v13_244"> Transcribe</span></a>
-          <a  href="{{url_for('index')}}"><span class="v13_245"> Transcriptions</span></a>
-            <a  href="{{url_for('index')}}"><span class="v13_246"> Translate</span></a>
-            <a href="{{ url_for('logout') }}" class="btn"><span class="v13_249">Logout</span></a>
-       
-        <div class="v14_6">
-          <div class="v14_4"></div>
-          <div class="v14_5"></div>
-        </div>
-        <div class="v14_14">
-          <div class="v14_11"></div>
-          <div class="v14_12"></div>
-          <div class="v14_13"></div>
-        </div>
-        <div class="v14_9"><div class="v14_8"></div></div>
-        <div class="v14_18">
-          <div class="v14_16"></div>
-          <div class="v14_17"></div>
-        </div>
-        <div class="v40_15">
-          <div class="v40_12"></div>
-          <div class="v40_13"></div>
-          <div class="v40_14"></div>
-        </div>
+          <a  href="{{url_for('home')}}"><span class="v13_245">Detect lang.</span></a>
+            <a  href="{{url_for('index')}}"><span class="v13_246">Save</span></a>
+            <a href="{{ url_for('logout') }}" class="btn"><span class="v13_249">Logout</span>   </a>
       </div>
+
+
+
       <div class="profile-picture"></div>
        <div class="profile-picturehi">  <h1>Hi there,</h1></div>
       <div class="profile-picturef">  <h1> {{session.fname}}</h1></div>
       <div class="profile-picturel">  <h1> {{session.lname}}</h1></div>
-     
+
        <form action="{{ url_for('userprofile', userid=userid) }}" method="post">
        {% if mesage is defined and mesage %}
 		   <div >{{ msg }}</div>
@@ -120,7 +121,7 @@
       </div>
       <input type="hidden" id="userid" name="userid" value="{{ editUser.userid }}">
       <div class="info-submit">
-        
+
         <input class="submit" type="submit" value="save Changes" />
       </div>
     </form>
