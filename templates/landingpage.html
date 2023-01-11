@@ -13,141 +13,128 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet" />
         <link rel="stylesheet" href="static/landingpage.css">
-    </head>
+</head>
     <body>
-        <nav class="navbar">
+          <nav class="navbar">
         <div class="logo">Autranz<p>speak, see</p></div>
         <ul class="nav-links">
             <input type="checkbox" id="checkbox_toggle"/>
             <label for="checkbox_toggle" class="hamburger">&#9776;</label>
             <div class="menu">
             <a href="#intro"><li>Intro</li></a>
-             <li><a href="#features">Features</a></li>
-             <li class="services">
-             <a href="#about">About</a>
-            </li>
-            <li><a href="/signup">Sign Up</a></li>
-            <li><a href="/login">Login</a></li>
+             <a href="#features"><li>Features</li></a>
+             <a href="#about"><li>About</li></a>
+            <a href="/signup"><li>Sign Up</li></a>
+            <a href="/login"><li>Login</li></a>
         </div>
     </ul>
 </nav>
-      <section class="first-section">
+
+
+
+<section class="first-section">
     <div class="general">
         <div  class="alltext">
         <div class="text1">
-           <article class="Part2">
-         <a id="intro"> <h2 class="texth1">au</h2></a>
-          <h2 class="pexth2">Tranz</h2>
+          <article class="Part2">
+          <h2 class="pexth2"></h2>
            </article>
            <article class="Part1">
-          <p >Autranz is an affordable transcription service app that converts your audio file and returns an accurate transcription of the audio file.
-            whats more?..You can translate the transcribed file and also save. IT IS TOTALLY FREE!!!
+         <a id="aintro"> <p > Autranz is an affordable transcription service app that converts your audio file and returns an accurate transcription of the audio file.
+            whats more?..You can detect the language of the transcribed file and also save. IT IS TOTALLY FREE!!!
           </p></a>
            </article>
            <div class="Part3">
          <a href='/signup' class='anchor'>Get Started</a>
          </div>
           </div>
-            
+
           </div>
-          <div class="slideshow-container">
+                   <div class="slideshow-container">
           <div class= "cash fade">
-            
+
             <img class="imager" src="{{url_for('static', filename = 'images/update1.jpg')}}">
             </div>
 
             <div class="cash fade">
-            <img class="imager1" src="{{url_for('static', filename = 'images/update2.jpg')}}">
-             
-              </div>
+            <img class="imager2" src="{{url_for('static', filename = 'images/update6.jpg')}}">
 
-             <div class="cash fade">
-              
-              <img class="imager2" src="{{url_for('static', filename = 'images/update6.jpg')}}">
-                
               </div>
                <div class="cash fade">
-              
+
               <img class="imager3" src="{{url_for('static', filename = 'images/update4.jpg')}}">
-                
-              </div>
-               <div class="cash fade">
-              
-              <img class="imager4" src="{{url_for('static', filename = 'images/update5.jpg')}}">
-                
+
               </div>
              </div>
 
              <div class="instrucot" >
-           <span class="dot"></span> 
-            <span class="dot"></span> 
-              <span class="dot"></span> 
-              <span class="dot"></span> 
-              <span class="dot"></span> 
+           <span class="dot"></span>
+            <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
               </div>
 
-<br> 
+<br>
            </div>
            </section>
 
 
-           
+
         <section class="third-section">
        <a id="features"> <h2>Autranz features</h2></a>
         <div class="speech-1">
-          <div class= "speech-11"> 
+          <div class= "speech-11">
           <img class="fmager1" src="{{url_for('static', filename = 'images/feature1.jpg')}}" alt=""/>
           </div>
             <article class="speech">
              <h3>Transcription</h3>
              <p>Upload desired audio and convert to text as quick as the flash!!! </p>
             </article>
-      
+
         </div>
         <div class="speech-1">
             <article class="speech2">
-             <h3>Translate transcribed audio files</h3>
-             <p>Transcribed audio files can be translated into various languages. The languages available will be released in the coming update</p>
+             <h3>Detect transcribed language</h3>
+             <h2>Detect transcribed language</h2>
+             <p>Transcribed audio files language can be detected, Both the language code and name will be displayed</p>
             </article>
 
-             <div class= "speech-22"> 
+             <div class= "speech-22">
           <img class="fmager2" src="{{url_for('static', filename = 'images/feature2.jpg')}}" alt=""/>
           </div>
         </div>
-        
+
         <div class="speech-1">
-          <div class= "speech-23"> 
+          <div class= "speech-23">
            <img class="fmager3" src="{{url_for('static', filename = 'images/feature3.jpg')}}" alt=""/>
           </div>
-            <article class="speech">
-             <h3>Log in and save transcribed files</h3>
+            <article class="speech3">
+             <h3 class "rave" >Save</h3>
              <p>You need to take a break ?, Never lose progress as transcribed files can be saved.</p>
             </article>
-        
+
         </div>
         </section>
-         
+
          <section class="about-section">
-             <a id="about"><h2>About Autranz</h2></a> 
-        
+             <a id="about"><h2>About Autranz</h2></a>
+
         <article>
             <div class="aboutblab">
             <p> This project was made initially for the purpose of helping people with hearing impairment, this is our way of making
-                life easier for these categories of people, we decided to also expand this application to other users who don't feel like 
-                going through the stress of typing.
-                We were also inspired to include the translation section ,so that users can easily transcribe and translate languages they do not
-                understand, We will look to implement these features as time goes on. This project is dedicated to ALX and Holberton school.
+                life easier for these categories of people. This project is also dedicated to ALX and Holberton school.
 
             </p>
-           
+
           </div>
           <div class="teamdmf">
-            <h3 class="abpix"><u>Autranz team</u></h3>
+            <div class="abpix"><h3><u>Autranz team</u></h3></div>
             <div class="team">
                 <div class="potrait"><img class="aumeju" src="{{url_for('static', filename = 'images/dami.jpg')}}" alt=""/></div>
                 <div class="talks">
                     <h5>Omotolani  Damilola</h5>
-                    <p>UI/UX/Front-end Engineer</p>
+                    <p>UI/UX and Front-end Engineer</p>
                     <p>Social media links:</p>
                     <div class="social">
                         <a href="https://github.com/Brownlolaoo" target="_blank"><i class="fa fa-github" style="font-size:48px;color:red;background-color:white; border-radius:20%;"></i></a>
@@ -161,7 +148,7 @@
                 <div class="potrait"><img class="aumeju" src="{{url_for('static', filename = 'images/meju.jpg')}}" alt=""/></div>
                 <div class="talks">
                     <h5>Ikwuegbuenyi Augustus Meju</h5>
-                    <p>Front-end/back-end Engineer</p>
+                    <p>Front-end and back-end Engineer</p>
                     <p>Social media links:</p>
                     <div class="social">
                         <a href="https://github.com/Imejuart1" target="_blank"><i class="fa fa-github" style="font-size:48px;color:red;background-color:white; border-radius:20%;"></i></a>
@@ -186,9 +173,9 @@
                   </div>
                   <div class="linautranz"><a href="https://github.com/Imejuart1/autranz-speech_recognition" target="_blank">click here to project repo</a></div>
                         </div>
-            
 
-                            
+
+
         </article>
         <script>
        let slideIndex = 0;
@@ -199,14 +186,14 @@ function showSlides() {
   let slides = document.getElementsByClassName("cash");
   let dots = document.getElementsByClassName("dot");
   for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
+    slides[i].style.display = "none";
   }
   slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}    
+  if (slideIndex > slides.length) {slideIndex = 1}
   for (i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(" active", "");
   }
-  slides[slideIndex-1].style.display = "block";  
+  slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
   setTimeout(showSlides, 3000); // Change image every 2 seconds
 }
