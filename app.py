@@ -1,10 +1,6 @@
 from flask import Flask, render_template, request, jsonify,  redirect, url_for, session
-from flask_googletrans import translator
-from langdetect import detect
-import pycountry
-import textblob
-from textblob import TextBlob
 from flask_mysqldb import MySQL
+from langdetect import detect
 import MySQLdb.cursors
 import re
 import speech_recognition as sr
@@ -15,10 +11,10 @@ app = Flask(__name__)
 
 app.secret_key = 'your secret key'
 
-app.config['MYSQL_HOST'] = 'localhost'
-app.config['MYSQL_USER'] = 'root'
-app.config['MYSQL_PASSWORD'] = 'EjirO251@'
-app.config['MYSQL_DB'] = 'flaskapp'
+app.config['MYSQL_HOST'] = 'Imejuart.mysql.pythonanywhere-services.com'
+app.config['MYSQL_USERNAME'] = 'Imejuart'
+app.config['MYSQL_PASSWORD'] = 'meju12345'
+app.config['MYSQL_DB'] = 'Imejuart$flaskapp'
 
 mysql = MySQL(app)
 
@@ -96,7 +92,7 @@ def signup():
         eursor = mysql.connection.cursor(MySQLdb.cursors.DictCursor)
         eursor.execute(
             'SELECT * FROM speech WHERE email = % s', (email, ))
-        
+
         cursor = mysql.connection.cursor(MySQLdb.cursors.DictCursor)
         cursor.execute(
             'SELECT * FROM speech WHERE username = % s', (username, ))
@@ -135,13 +131,13 @@ def transcribe():
     # Get the audio file from the request
     if "file" not in request.files:
         return redirect(request.url)
-    
+
     audio_file = request.files['file']
     print(audio_file)
     if audio_file.filename == '':
         return redirect(request.url)
-    
-    if audio_file:   
+
+    if audio_file:
     # Load the audio file
         r = sr.Recognizer()
         with sr.AudioFile(audio_file) as source:
@@ -155,9 +151,20 @@ def transcribe():
         except sr.RequestError as e:
             return f"Error while transcribing: {e}"
         transcribed_text = text
-    return render_template('index.html', transcript=transcribed_text, user=user)
+        language = detect(transcribed_text)
+    return render_template('index.html', transcript=transcribed_text, user=user, language=language)
 
+def home():
+    return render_template("home.html")
 
+@app.route('/detect-language')
+def detect_language():
+    sentence = request.args.get('sentence')
+    # passes the retirved sentence to landetect
+    language = detect(sentence)
+    return render_template('results.html',prediction=language)
+
+#return 'The detected language is: {}'.format(language)
 
 @app.route('/logout')
 def logout():
@@ -167,7 +174,6 @@ def logout():
 
 if __name__ == '__main__':
     app.run(debug=True, threaded=True)
-
 
 
 
