@@ -29,11 +29,11 @@
       <div class="v13_241">
         <span class="v13_242">Transcribe</span>
         <a  href="{{url_for('userprofile', user=session.userid)}}"><span class="v13_243"> User info</span></a>
-          <a  href="{{url_for('index', user=session.userid)}}"><span class="v13_244"> Transcribe</span></a>
-          <a  href="{{url_for('index')}}"><span class="v13_245"> Transcriptions</span></a>
-            <a  href="{{url_for('index')}}"><span class="v13_246"> Translate</span></a>
+          <a  href="{{url_for('transcribe', user=session.userid)}}"><span class="v13_244"> Transcribe</span></a>
+          <a  href="{{url_for('Detect')}}"><span class="v13_245">Detect lang.</span></a>
+            <a  href="{{url_for('index')}}"><span class="v13_246">Save</span></a>
             <a href="{{ url_for('logout') }}" class="btn"><span class="v13_249">Logout</span></a>
-       
+
         <div class="v14_6">
           <div class="v14_4"></div>
           <div class="v14_5"></div>
@@ -57,9 +57,9 @@
 		</header>
 		<main>
 			<div class="main__container">
-				<h1>Transcribe your audio file</h1>
+				<h1>Transcribe your audio </h1>
 			</div>
-			<div class="npload"><h2>Upload new File</h2></div>
+			<div class="npload"><h2>Upload new File (file must be wav file and not more than 1min)</h2></div>
 			<div class="aitranscribe" >
 			<form method="post" enctype="multipart/form-data">
 				<input  type="file" name="file" />
@@ -76,6 +76,27 @@
 			<div class="transcript__wrapper">
 				<h1 class="transcript__header">Transcript</h1>
 				<p class="transcript__text">{{ transcript }}</p>
+{% if language == 'de'%}
+<h4 class="transcript__text" style="color:red;">Detected German, Language code: {{language}}</h4>
+{% elif language == 'es'%}
+<h4 class="transcript__text"style="color:red;">Detected Spanish, Language code: {{language}}</h4>
+{% elif language == 'zh-CN'%}
+<h4 class="transcript__text" style="color:red;">Detected Chinese, Language code: {{language}}</h4>
+{% elif language == 'fr'%}
+<h4 class="transcript__text" style="color:red;">Detected French, Language code: {{language}}</h4>
+{% elif language == 'en'%}
+<h4 class="transcript__text" style="color:red;">Detected English, Language code: {{language}}</h4>
+{% elif language == 'ja'%}
+<h4 class="transcript__text" style="color:red;">Detected Japanese, Language code: {{language}}</h4>
+{% elif language == 'ru'%}
+<h4 class="transcript__text" style="color:red;">Detected Russian, Language code: {{language}}</h4>
+{% elif language == 'it'%}
+<h4 class="transcript__text"style="color:red;">Detected Italian, Language code: {{language}}</h4>
+{% elif language != ' ' %}
+<h4 class="transcript__text" style="color:red;">Detected Language code: ({{language}})...<a href="https://www.google.com/search?q={{language}} is which language code" rel="search" target="_blank">Click me to get country name</a></h4>
+{% else: %}
+<h4 class="transcript__text" style="color:red;" >Detected Language will be displayed here after transcription</h4>
+{% endif %}
 			</div>
 			{% endif %}
 		</main>
