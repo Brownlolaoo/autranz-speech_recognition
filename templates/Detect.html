@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+<h2>Welcome To AuTranz Detection</h2>
+<p>Detect your Langauge</p>
+  <form action="/detect-language" method="GET">
+    <label for="sentence">Enter a sentence:</label>
+    <input type="text" id="sentence" name="sentence">
+    <input type="submit" value="Detect language">
+</form>
+
+ <div class="results">
+<h2>Detected Language:</h2>
+</div>
+
+{% if prediction == 'de'%}
+<h4 style="color:black;">Detected German, Language code: {{prediction}}</h4>
+{% elif prediction == 'es'%}
+<h4 style="color:black;">Detected Spanish, Language code: {{prediction}}</h4>
+{% elif prediction == 'zh-CN'%}
+<h4 style="color:black;">Detected Chinese, Language code: {{prediction}}</h4>
+{% elif prediction == 'fr'%}
+<h4 style="color:black;">Detected French, Language code: {{prediction}}</h4>
+{% elif prediction == 'en'%}
+<h4 style="color:black;">Detected English, Language code: {{prediction}}</h4>
+{% elif prediction == 'ja'%}
+<h4 style="color:black;">Detected Japanese, Language code: {{prediction}}</h4>
+{% elif prediction == 'ru'%}
+<h4 style="color:black;">Detected Russian, Language code: {{prediction}}</h4>
+{% elif prediction == 'it'%}
+<h4 style="color:black;">Detected Italian, Language code: {{prediction}}</h4>
+{% else: %}
+<h4 style="color:black;">Detected Language code: ({{prediction}})...<a href="https://www.google.com/search?q={{prediction}} is which language code" rel="search" target="_blank">Click me to get country name</a></h4>
+{% endif %}
+<a href="/index"> Go back to transcribe</a>
+</div>
+</body>
+</html>
