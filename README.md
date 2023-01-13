@@ -17,9 +17,9 @@ This project is our Portfolio project,concluding our foundation session at ALX S
 
 ## The Team
 
-* **Omotolani Damilola@Brownlolaoo
-* **Augustus Ikwuegbuenyi@Imejuart1
-* **Frank Success@froschi95
+* **Omotolani Damilola [@Brownlolaoo]()
+* **Augustus Ikwuegbuenyi[@Imejuart1]()
+* **Frank Success [@froschi95]()
 
 ## Blog Posts
 
@@ -34,9 +34,10 @@ After developing the programm, we wrote a blog post to reflect on what we did so
 ## how to use AUTRANZ
 
 Go to the website **AUTRANZ**
-Sign up
-Sign in
-Upload audio and transcribe
+
+* Sign up
+* Sign in
+* Upload audio and transcribe
 
 ## Known bugs
 
