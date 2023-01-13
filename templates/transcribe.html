@@ -1,4 +1,4 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
        <meta charset="utf-8">
@@ -9,7 +9,7 @@
       href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
       rel="stylesheet"
     />
-    <link href="static/userprofile.css" rel="stylesheet" />
+    <link href="static/index.css" rel="stylesheet" />
     <title>Autranz</title>
   </head>
   <body>
@@ -25,12 +25,12 @@
         <ul class="nav-links">
             <input type="checkbox" id="checkbox_toggle"/>
             <label for="checkbox_toggle" class="hamburger">&#9776;</label>
-            <div class="urofile"><h5>User Profile</h5></div>
+            <div class="urofile"><h5>Transcribe</h5></div>
             <div class="menu">
 
         <a  href="{{url_for('userprofile', user=session.userid)}}"><li> User Profile</li></a>
-          <a  href="{{url_for('transcribe', user=session.userid)}}"><li> Transcribe</li></a>
-          <a  href="{{url_for('Detect')}}"><li>Detect lang.</li></a>
+          <a  href="{{url_for('index', user=session.userid)}}"><li> Transcribe</li></a>
+          <a  href="{{url_for('home')}}"><li>Detect lang.</li></a>
             <a  href="{{url_for('index')}}"><li class="v13_246">Save</li></a>
             <a href="{{ url_for('logout') }}" class="btn"><li class="ogred" >Logout</li> </a>
 
@@ -45,11 +45,11 @@
         <ul class="nav-links">
             <input type="checkbox" id="checkbox_toggle"/>
             <label for="checkbox_toggle" class="hamburger">&#9776;</label>
-            <div class="urofile"><h5>User Profile</h5></div>
+            <div class="urofile"><h5>Transcribe</h5></div>
             <div class="menu">
         <a  href="{{url_for('userprofile', user=session.userid)}}"><li> User Profile</li></a>
-          <a  href="{{url_for('transcribe', user=session.userid)}}"><li> Transcribe</li></a>
-          <a  href="{{url_for('Detect')}}"><li>Detect lang.</li></a>
+          <a  href="{{url_for('index', user=session.userid)}}"><li> Transcribe</li></a>
+          <a  href="{{url_for('home')}}"><li>Detect lang.</li></a>
             <a  href="{{url_for('index')}}"><li class="v13_246">Save</li></a>
             <a href="{{ url_for('logout') }}" class="btn"><li class="ogred" >Logout</li> </a>
 
@@ -58,8 +58,17 @@
 </nav>
 </div>
 </div>
-    
+
       <div class="fupdate">
+         <div class="v13_93">
+        <div class="v13_94"><span class="v13_95">au</span></div>
+        <span class="v13_96">Tranz</span>
+        <div class="v13_97">
+          <div class="v13_98"></div>
+        </div>
+         <span class="v13_99">UPDATE YOUR INFO</span>
+        <span class="v13_100">{{session.username}}</span>
+      </div>
 		<main>
 			<div class="main__container">
 				<h1>Transcribe your audio </h1>
@@ -67,7 +76,7 @@
 			<div class="npload"><h2>Upload new File (file must be wav file and not more than 1min)</h2></div>
 			<div class="aitranscribe" >
 			<form method="post" enctype="multipart/form-data">
-				<input  type="file" name="file" />
+				<input class="choose" type="file" name="file" />
 				<br />
 				<input
 					type="submit"
@@ -105,5 +114,6 @@
 			</div>
 			{% endif %}
 		</main>
+		</div>
 	</body>
 </html>
