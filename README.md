@@ -69,7 +69,8 @@ These components make up what a user experiences when they check out **AUTRANZ**
 
 ## mysql
 
-We decided to go with Firebase for our backend/database as it provides all the functionality we need to develop this project such as authentication, database storage, and cloud storage. As a non-relational database, it made calling any required information simple.
+We decided to go with MYSQL for our backend/database as it provides all the functionality we need to develop this project such as  user authentication and updating user info, Also for monitoring the number of users we have using the admin dashboard.
+Users can also save and delete transcribed file.
 
 
 ## Related projects
