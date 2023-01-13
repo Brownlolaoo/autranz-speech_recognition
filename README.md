@@ -1,5 +1,5 @@
 # autranz-speech_recognition ~ *SPEAK SEE*
-
+<img src="static/images/dami.jpg" alt="Dami" title="meju" >
 ![logo](/Users/user/Desktop/AUTranz (1).png)
 
 ## Introduction
