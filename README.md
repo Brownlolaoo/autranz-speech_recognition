@@ -1,5 +1,5 @@
 # autranz-speech_recognition ~ *SPEAK SEE*
-
+<img src="static/images/AUTranz (1).png" alt="AUTRANZ logo" title="meju" >
 ![logo](/Users/user/Desktop/AUTranz (1).png)
 
 ## Introduction
