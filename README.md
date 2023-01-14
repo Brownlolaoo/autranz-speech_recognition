@@ -1,6 +1,7 @@
 # autranz-speech_recognition ~ *SPEAK SEE*
+
 <img src="static/images/AUTranz (1).png" alt="AUTRANZ logo" title="meju" >
-![logo](/Users/user/Desktop/AUTranz (1).png)
+
 
 ## Introduction
 
@@ -51,7 +52,12 @@ Go to the website **AUTRANZ**
 
 Autranz is a multi--page app, its coded mainly in python, we used Flask to take in an Audio file and create both a GET and POST request. we designed all the userinterface with figma, and used html and css for the frontend.
 
-![APIs](/Users/user/Desktop/Screenshot 2023-01-13 at 22.22.35.png)
+<img src="static/images/infra.png" alt="infra" title="meju" >
+
+Here is a screenshort of how the post and get method works.
+
+<img src="static/images/architecture.png" alt="AUTRANZ logo" title="meju" >
+
 
 
 ## list of components
@@ -60,13 +66,13 @@ These components make up what a user experiences when they check out **AUTRANZ**
 
 | component | Description |
 |-----------|-------------|
-| [Landing.html](./src/components/Landing.vue) | The landing page a user sees when they navigate to **AUTRANZ**. |
-| [Login.html](./src/components/Login.vue)   | The login page. There's a link to go to the Signup page if a user hasn't signed up. |
-| [Detect.html](./src/components/Matches.vue) |page where users can detect various of languages. |
-| [Transcribe.html](./src/components/Navbar.vue) | users can transcribe and save their transcriptions.
-| [Signup.html](./src/components/Signup.vue) | Signup page for users who do not have an account. It asks for a valid email address and for them to make and confirm a password. |
-| [Dashboard.html](./src/components/Swiping.vue) | The main page of **AUTRANZ** where users can see another user's can see list of their transcriptions, time , and date .' |
-| [UserProfile.html](./src/components/UserProfile.vue) |  on this page the user can change their  information such as name, location, phoneno and so on. |
+| [Landing.html](./templates/Landing.html) | The landing page a user sees when they navigate to **AUTRANZ**. |
+| [Login.html](./templates/Login.html)   | The login page. There's a link to go to the Signup page if a user hasn't signed up. |
+| [Detect.html](./templates/detect.html) |page where users can detect various of languages. |
+| [Transcribe.html](./templates/transcribe.html) | users can transcribe and save their transcriptions.
+| [Signup.html](./templates/Signup.html) | Signup page for users who do not have an account. It asks for a valid email address and for them to make and confirm a password. |
+| [Dashboard.html](./templates/dashboard.html) | The main page of **AUTRANZ** where users can see another user's can see list of their transcriptions, time , and date .' |
+| [UserProfile.html](./templates/UserProfile.html) |  on this page the user can change their  information such as name, location, phoneno and so on. |
 
 ## mysql
 
