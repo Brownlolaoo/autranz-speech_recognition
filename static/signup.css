@@ -9,7 +9,9 @@ html, body {
 
 }
 
-.v3_177 {
+/*FRAMES*/
+
+.top-frame {
     display:grid;
      grid-template-columns: 50% 50%;
      gap:1%;
@@ -17,7 +19,7 @@ html, body {
 
 }
 
-.v3_178 {
+.inner-frame {
 
     display:flex;
     flex-direction:column;
@@ -28,13 +30,15 @@ background: #1976D2;
 
 }
 
-.v3_196 {
+.autranz-frame {
     background: rgba(58, 134, 255, 1);
     width: 24vw;
     min-height:4vw;
 }
 
-.v3_197 {
+/*LABELS*/
+
+.autranz-label {
    color: rgba(255, 255, 255, 1);
   font-family: Montserrat;
     font-weight: Medium;
@@ -44,13 +48,75 @@ background: #1976D2;
 }
 
 
-.v8_272 {
-    color:  rgb(253, 193, 89);
+.welcome-label {
+    color:  rgb(255, 255, 255);
     font-family: Montserrat;
     font-weight: bold;
     margin-top:2vw;
     font-size: 1.5vw;
 }
+
+.username-label {
+    width: 96px;
+    color: #1976D2;
+    font-family: Montserrat;
+    font-weight: bolder;
+    font-size: 20px;
+    opacity: 1;
+
+}
+
+.email-label {
+    width: 52px;
+    color:#1976D2;
+    font-family: Montserrat;
+    font-weight: Bolder;
+    font-size: 20px;
+    opacity: 1;
+}
+
+.password-label {
+    width: 98px;
+    color:#1976D2;
+    font-family: Montserrat;
+    font-weight: bolder;
+    font-size: 20px;
+    opacity: 1;
+    text-align: left;
+}
+
+.reenter-label {
+    width: 271px;
+    color:#1976D2;
+    font-family: Montserrat;
+    font-weight: bolder;
+    font-size: 20px;
+    opacity: 1;
+    text-align: left;
+}
+
+.agree-label {
+
+    color:#1976D2;
+    font-family: Montserrat;
+        font-weight: Bolder;
+    font-size: 20px;
+    opacity: 1;
+    margin-right:8vw;
+    text-align: center;
+}
+
+.signup-label {
+
+    color:#1976D2;
+      font-family: Montserrat;
+      font-weight: bolder;
+      font-size: 20px;
+      opacity: 1;
+      align-self:center;
+      margin-left:3vw;
+      text-align: center;
+  }
 .porm{
     display:grid;
     grid-template-columns: 100%;
@@ -62,7 +128,7 @@ background: #1976D2;
 
 .msg{
 
-        color:red;
+        color:#fff;
         position: absolute;
         top: 50px;
         left: 731px;
@@ -82,16 +148,10 @@ background: #1976D2;
     margin-bottom:2vw;
 
 }
-.v8_275 {
-    width: 96px;
-    color: #1976D2;
-    font-family: Montserrat;
-    font-weight: bolder;
-    font-size: 20px;
-    opacity: 1;
 
-}
-.v8_278 {
+/*INPUTS*/
+
+.username-input {
     border-top-style: hidden;
     border-left-style: hidden;
     border-right-style: hidden;
@@ -104,16 +164,9 @@ background: #1976D2;
     font-size: 20px;
 
 }
-.v8_279 {
-    width: 52px;
-    color:#1976D2;
-    font-family: Montserrat;
-    font-weight: Bolder;
-    font-size: 20px;
-    opacity: 1;
-}
 
-.v8_281 {
+
+.email-input {
     border-top-style: hidden;
         border-left-style: hidden;
         border-right-style: hidden;
@@ -127,16 +180,10 @@ background: #1976D2;
     opacity: 1;
     text-align: left;
 }
-.v8_285 {
-    width: 98px;
-    color:#1976D2;
-    font-family: Montserrat;
-    font-weight: bolder;
-    font-size: 20px;
-    opacity: 1;
-    text-align: left;
-}
-.v8_295 {
+
+
+
+.password-input {
 border-top-style: hidden;
     border-left-style: hidden;
     border-right-style: hidden;
@@ -150,16 +197,8 @@ border-top-style: hidden;
     opacity: 1;
     text-align: left;
 }
-.v8_305 {
-    width: 271px;
-    color:#1976D2;
-    font-family: Montserrat;
-    font-weight: bolder;
-    font-size: 20px;
-    opacity: 1;
-    text-align: left;
-}
-.v8_314 {
+
+.reenter-input {
 border-top-style: hidden;
     border-left-style: hidden;
     border-right-style: hidden;
@@ -173,30 +212,8 @@ border-top-style: hidden;
     opacity: 1;
     text-align: left;
 }
-.v8_319 {
 
-    color:#1976D2;
-    font-family: Montserrat;
-        font-weight: Bolder;
-    font-size: 20px;
-    opacity: 1;
-    margin-right:8vw;
-    text-align: center;
-}
-
-.v8_323 {
-
-  color:#1976D2;
-    font-family: Montserrat;
-    font-weight: bolder;
-    font-size: 20px;
-    opacity: 1;
-    align-self:center;
-    margin-left:3vw;
-    text-align: center;
-}
-
-.v8_320 {
+.signup-input {
     width: 20vw;
     height: 50px;
     background: rgba(58, 134, 255, 1);
@@ -213,15 +230,15 @@ border-top-style: hidden;
     text-align: center;
     align-items:center;
 }
-.vN8_321 {
-    color: rgb(253, 193, 89);
+.signup-input {
+    color: rgb(58, 134, 255);
     font-family: Montserrat;
     font-weight: SemiBold;
     font-size: 20px;
     opacity: 1;
 
 }
-.v8_320 input[type=submit]{
+.signup input[type=submit]{
     background-color: rgba(58, 134, 255, 1);
     outline: none;
     border-top-style: hidden;
@@ -234,7 +251,7 @@ border-top-style: hidden;
 }
 
 
-.v8_320 input[type=submit]:hover{
+.signup input[type=submit]:hover{
     font-size: 30px;
     left: 130px;
     margin-top: 5px;

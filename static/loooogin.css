@@ -8,7 +8,9 @@ html, body {
     overflow: hidden;
 }
 
-.v3_67 {
+/*FRAMES*/
+
+.top-frame {
 display:grid;
      grid-template-columns: 50% 50%;
      gap:1%;
@@ -24,31 +26,31 @@ display:grid;
     overflow: hidden; */
 }
 
-.v3_94 {
-   display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-    background: rgb(181, 55, 13);
+.signin-frame{
+    padding-top:1vw;
+
 }
 .otro{
     width:30vw;
     margin-top:-8vw;
     margin-right:24vw;
 }
-.v3_109 {
 
-    color: rgba(0, 0, 0, 1);
+/*LABEL*/
+
+
+.speaksee-label {
+
+    color: rgba(255, 255, 255, 1);
     font-family: Montserrat;
     font-weight: Bolder;
     font-size: 2vw;
     margin-left:16vw;
 }
 
-.v3_69 {
+.autranz-label {
 
-    color: rgb(4, 45, 98);
+    color: rgb(25, 118, 210);
     top: 5px;
     left: 4px;
     font-family: Montserrat;
@@ -56,35 +58,30 @@ display:grid;
     font-size: 4vw;
     opacity: 1;
 }
-.v3_68 {
-     padding-top:1vw;
 
-}
-.v3_111 {
-    color: rgba(0, 0, 0, 1);
+.top-frame-label {
+    display:flex;
+     flex-direction:column;
+     justify-content:center;
+     align-items:center;
+     text-align:center;
+     background: rgb(58, 134, 255);
+ }
+
+ .account-label {
+
     font-family: Montserrat;
     font-weight: bolder;
-
-    font-size: 1.5vw;
-
+    font-size: 1.4vw;
+    opacity: 1;
+    margin-top:3vw;
 }
-.vn3_70 {
+
+.img-label {
     margin-top:6vw;
 }
-.load{
-   width:40vw;
-   height: 20vw;
-}
-.pogin{
-    display:flex;
-    flex-direction:column;
 
-    justify-content: center;
-    align-items:center;
-    margin-top:5vw;
-
-}
-.v3_96 {
+.welcome-label {
 
     color: rgba(58, 134, 255, 1);
     font-family: Montserrat;
@@ -94,43 +91,8 @@ display:grid;
     text-align: left;
     margin-bottom:7vw;
 }
-.v3_99 {
-    border-radius: 10px;
-    border-color: rgba(0, 0, 0, 0.15);
-    width: 28vw;
-    height: 5vw;
-    color: rgba(58, 134, 255, 1);
-    font-family: Montserrat;
-    font-weight: Regular;
-    font-size: 20px;
-    opacity: 1;
-    text-align: left;
-}
-.v3_103 {
-     border-radius: 10px;
-    width: 28vw;
-    height: 5vw;
-    color: rgba(58, 134, 255, 1);
-    font-family: Montserrat;
-    font-weight: Regular;
-    font-size: 20px;
-    opacity: 1;
-    text-align: left;
-}
 
-
-.v3_106 {
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-}
-a{
-    text-decoration: none;
-}
-
-
-.v3_108 {
+.login-label {
     border-top-left-radius: 8px;
         border-top-right-radius: 8px;
         border-bottom-left-radius: 8px;
@@ -146,7 +108,16 @@ a{
     text-align: center;
 }
 
-.v5_225 {
+.signin-label {
+    color: rgba(255, 255, 255, 1);
+    font-family: Montserrat;
+    font-weight: bolder;
+
+    font-size: 1.5vw;
+
+}
+
+.cont-label {
     color: rgba(0, 0, 0, 1);
     font-family: Montserrat;
     font-weight: bolder;
@@ -156,7 +127,60 @@ a{
     opacity: 1;
     text-align: left;
 }
-.v7_249 {
+
+.forgotpasswrd-label {
+    color: rgba(0, 0, 0, 1);
+    margin-top:-1.3vw;
+    font-family: Montserrat;
+    font-weight: Regular;
+    font-size: 1.2vw;
+    margin-left:16vw;
+    margin-bottom:3vw;
+
+}
+
+.load{
+   width:40vw;
+   height: 20vw;
+}
+.pogin{
+    display:flex;
+    flex-direction:column;
+
+    justify-content: center;
+    align-items:center;
+    margin-top:5vw;
+
+}
+
+/*INPUTS*/
+
+
+.username-input{
+    border-radius: 10px;
+    border-color: rgba(0, 0, 0, 0.15);
+    width: 28vw;
+    height: 5vw;
+    color: rgba(58, 134, 255, 1);
+    font-family: Montserrat;
+    font-weight: Regular;
+    font-size: 20px;
+    opacity: 1;
+    text-align: left;
+}
+.passwrd-input {
+     border-radius: 10px;
+    width: 28vw;
+    height: 5vw;
+    color: rgba(58, 134, 255, 1);
+    font-family: Montserrat;
+    font-weight: Regular;
+    font-size: 20px;
+    opacity: 1;
+    text-align: left;
+}
+
+.social-input {
     display:flex;
     flex-direction:row;
     gap:1vw;
@@ -164,6 +188,20 @@ a{
     align-items:flex-start;
     margin-right:13vw;
 }
+
+.v3_106 {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+a{
+    text-decoration: none;
+}
+
+
+/*SOCIALS*/
+
 
 .facebook{
     border: 1px solid black;
@@ -179,24 +217,8 @@ a{
     background-color: rgb(29, 161, 242);
         border-radius: 50%;
 }
-.v3_105 {
-    color: rgba(0, 0, 0, 1);
-    margin-top:-1.3vw;
-    font-family: Montserrat;
-    font-weight: Regular;
-    font-size: 1.2vw;
-    margin-left:16vw;
-    margin-bottom:3vw;
 
-}
-.v7_270 {
 
-    font-family: Montserrat;
-    font-weight: bolder;
-    font-size: 1.4vw;
-    opacity: 1;
-    margin-top:3vw;
-}
 
 /*
 
@@ -833,5 +855,3 @@ a{
     border: 1px solid rgba(0, 0, 0, 1);
     transform: rotate(-159deg);
 }*/
-
-

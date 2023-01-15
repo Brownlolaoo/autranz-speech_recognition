@@ -35,12 +35,12 @@ padding: 10px;
 
  background-color: #1f1f38;;
 
-color: blue;
+color:#3A86FF;
 
 }
 .nav-links a {
 
-color:#4db5ff;
+color:#fff;
 
 }
 
@@ -49,7 +49,7 @@ font-weight: bold;
 font-size: 32px;
 display: flex;
 flex-direction: row;
-color:#4db5ff;
+color:#3A86FF;
 
 }
 .menu {
@@ -92,11 +92,11 @@ min-height:2rem;
 .general .Part1 {
     padding: 1.2rem;
     margin-left: 13%;
-    font-family: 'DM Sans';
+    font-family:'Courier New', Courier, monospace;
     font-weight: 700;
     font-size: clamp(1rem, 2.5vw, 4rem);
     line-height: 41px;
-    color: #ECE6E6;
+    color: #fff;
 }
 
 .general .Part1 p {
@@ -107,7 +107,7 @@ min-height:2rem;
 .general .Part2 {
     margin-left: 10%;
     margin-top: 6rem;
-    font-family: 'DM Sans';
+    font-family:'Courier New', Courier, monospace;
     font-style: normal;
     color: #FFFFFF;
 }
@@ -116,8 +116,8 @@ min-height:2rem;
     color: white;
     width:90px;
     padding-left: 3px;
-    border: 3px solid rgb(12, 14, 131);
-    background-color: blue;
+    border: 3px solid  #3A86FF;
+    background-color: #3A86FF;
     font-family: Montserrat;
     text-align: start;
     font-size: 65px;
@@ -126,8 +126,8 @@ min-height:2rem;
 }
 .general .pexth2 {
     text-align: start;
-    font-family: Montserrat;
-    color: #4db5ff;;
+    font-family:'Courier New', Courier, monospace;
+    color: #3A86FF;
     font-weight: Bold;
     font-size: 35px;
     font-weight:bold;
@@ -143,8 +143,8 @@ min-height:2rem;
 
 .general .anchor {
     text-decoration: none;
-    background: #4db5ff;
-    font-family: 'Poppins';
+    background: #3A86FF;
+    font-family:'Courier New', Courier, monospace;
     font-style: normal;
     font-weight: bolder;
     font-size: 16px;
@@ -161,7 +161,7 @@ min-height:2rem;
     background: transparent;
     color: #f0eeeb;
     border: 3px solid;
-    border-color: #FAAF40;
+    border-color: #1976D2;
 
 }
 
@@ -179,7 +179,7 @@ min-height:2rem;
 .imager {
 
     max-width: 80%;
-    border: 1px solid rgb(89, 0, 255);
+    border: 1px solid #fff
     border-top-left-radius: 50px;
         border-top-right-radius: 50px;
         border-bottom-left-radius: 50px;
@@ -190,7 +190,7 @@ min-height:2rem;
 
     max-width: 90%;
 
-    border: 1px solid rgb(89, 0, 255);
+    border: 1px solid #fff;
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
     border-bottom-left-radius: 50px;
@@ -198,7 +198,7 @@ min-height:2rem;
 }
 .imager3 {
     max-width: 70%;
-    border: 1px solid rgb(89, 0, 255);
+    border: 1px solid #fff;
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
     border-bottom-left-radius: 50px;
@@ -207,7 +207,7 @@ min-height:2rem;
 
 
 .numbertext {
-    color: #f2f2f2;
+    color: #fff;
     font-size: 22px;
     padding: 8px 12px;
     position: absolute;
@@ -230,7 +230,7 @@ min-height:2rem;
     }
 }
 .text {
-    color: #f2f2f2;
+    color: #fff;
     font-size: 22px;
     padding: 8px 12px;
     position: absolute;
@@ -259,7 +259,7 @@ min-height:2rem;
 }
 .active {
     display: none;
-    background-color: #1c26d7;
+    background-color: #3A86FF;
 }
 
 input[type=checkbox] {
@@ -297,7 +297,7 @@ input[type=checkbox] {
     font-size: 42px;
     line-height: 42px;
     font-family: 'Courier New', Courier, monospace;
-    color: blue;
+    color: #3A86FF;
 }
 
 .third-section .speech-1 {
@@ -324,7 +324,7 @@ input[type=checkbox] {
     font-size: 33px;
     line-height: 43px;
     padding-bottom: 0.5rem;
-    color: #5353ff;
+    color: #3A86FF;
 }
 .third-section .speech3 h3 {
     font-family: 'Courier New', Courier, monospace;
@@ -333,7 +333,7 @@ input[type=checkbox] {
     font-size: 33px;
     line-height: 43px;
     padding-bottom: 0.5rem;
-    color: #5353ff;
+    color: #3A86FF;
 }
 
 .third-section .speech p {
@@ -342,7 +342,7 @@ input[type=checkbox] {
     font-size: 24px;
     line-height: 31px;
     text-align: start;
-    color: #504848;
+    color: #3A86FF;
     word-spacing: 0.1rem;
 }
 .third-section .speech3 p {
@@ -351,7 +351,7 @@ input[type=checkbox] {
     font-size: 24px;
     line-height: 31px;
     text-align: start;
-    color: #504848;
+    color: #3A86FF;
     word-spacing: 0.1rem;
 }
 .third-section .speech-11 {
@@ -383,14 +383,14 @@ input[type=checkbox] {
     max-width: 80%;
     height: 95%;
     margin-top: 3.6rem;
-    border: 3px solid blue;
+    border: 3px solid #fff;
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
     border-bottom-left-radius: 50px;
     border-bottom-right-radius: 50px;
     filter: brightness(120%);
         filter: contrast(120%);
-        filter: drop-shadow(rgb(9, 7, 172) 10px 10px 10px);
+        filter: drop-shadow(rgb(58,134,255) 10px 10px 10px);
 }
  @-webkit-keyframes run {
      from {
@@ -412,28 +412,28 @@ input[type=checkbox] {
     height: 85%;
     margin-top: 3.6rem;
     margin-left: 6rem;
-    border: 3px solid blue;
+    border: 3px solid #fff;
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
     border-bottom-left-radius: 50px;
     border-bottom-right-radius: 50px;
     filter: brightness(120%);
     filter: contrast(120%);
-    filter: drop-shadow(rgb(9, 7, 172) 10px 10px 10px);
+    filter: drop-shadow(rgb(58,134,255) 10px 10px 10px);
 }
 .fmager3 {
     width: 65%;
     height: 85%;
     margin-top: 3.6rem;
     margin-left: 12rem;
-    border: 3px solid blue;
+    border: 3px solid #fff;
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
     border-bottom-left-radius: 50px;
     border-bottom-right-radius: 50px;
     filter: brightness(120%);
     filter: contrast(120%);
-    filter: drop-shadow(rgb(9, 7, 172) 10px 10px 10px);
+    filter: drop-shadow(rgb(58,134,255) 10px 10px 10px);
 }
 .third-section .speech2 {
 
@@ -451,7 +451,7 @@ input[type=checkbox] {
     font-size: 33px;
     line-height: 43px;
     padding-bottom: 0.5rem;
-    color: #5353ff;
+    color: #3A86FF;
 }
 
 .third-section .speech2 p {
@@ -547,13 +547,11 @@ input[type=checkbox] {
     line-height: 42px;
     text-align: center;
     font-size: 40px;
-    color: #4db5ff;
+    color: #3A86FF;
 }
 .aboutblab{
     margin-top: 1rem;
-    border: 5px solid blue;
-    background-color: #4db5ff;
-     font-weight: bolder;
+    font-weight: bolder;
     margin-left: 10rem;
     margin-right: 10rem;
     border-top-left-radius: 50px;
@@ -565,7 +563,7 @@ input[type=checkbox] {
     padding-left: 2rem;
         padding-right: 2rem;
         font-family: 'Courier New', Courier, monospace;
-    color: white;
+    color: #fff;
     font-size: 20px;
     text-align:center;
 
@@ -575,7 +573,7 @@ input[type=checkbox] {
     font-family: 'Courier New', Courier, monospace;
     padding-left: 27rem;
     padding-top: 2rem;
-    color:white;
+    color:#fff;
     font-weight: bolder;
     font-size: 40px;
 }
@@ -584,7 +582,7 @@ input[type=checkbox] {
      margin-left: 40vw;
     margin-right:30vw;
     font-size: 30px;
-    color: blue;
+    color: #3A86FF;
     font-family: 'Courier New', Courier, monospace;
     padding-bottom: 1rem;
     padding-top: 3rem;
@@ -608,12 +606,12 @@ input[type=checkbox] {
 .talks h5{
     font-size: 20px;
     font-family: 'Courier New', Courier, monospace;
-        color: white;
+        color: #fff;
     padding-bottom: 1rem;
     margin-right:  40vw;
 }
 .talks p{
-    color: white;
+    color: #fff;
     font-family: 'Courier New', Courier, monospace;
 }
 .talks{
@@ -631,7 +629,7 @@ input[type=checkbox] {
     height:70%;
     margin-left:  40vw;
     border-radius: 50%;
-    border: 2px solid yellow;
+    border: 2px solid #fff;
 }
 
 .team1 {
@@ -644,9 +642,9 @@ input[type=checkbox] {
 .linautranz{
     text-align:center;
     font-size: 30px;
-    background-color: white;
-    border-color: blue;
-    border: 4px solid blue;
+    background-color: #fff;
+    border-color: #3A86FF;
+    border: 4px solid #3A86FF;
 }
 
 
@@ -670,7 +668,7 @@ input[type=checkbox] {
 
         position: absolute;
 
-        background-color: white;
+        background-color: #fff;
 
         right: 0;
 
@@ -685,7 +683,7 @@ input[type=checkbox] {
 
         display: inline-block;
 
-        background-color: #4c9e9e;
+        background-color: #1976D2;
 
         transition: 0.3s ease;
 
@@ -706,7 +704,7 @@ input[type=checkbox] {
     .hamburger {
 
         display: block;
-        color :#4db5ff
+        color :#3A86FF;
 
     }
 
@@ -722,7 +720,7 @@ input[type=checkbox] {
 
     .dropdown li:hover {
 
-        background-color: #4c9e9e;
+        background-color: #1976D2;
 
     }
 
@@ -739,15 +737,15 @@ input[type=checkbox] {
     margin-right:0rem;
     margin-left:0rem;
     min-width:350px;
-    font-family: 'DM Sans';
+    font-family:'Courier New', Courier, monospace;
     font-weight: 700;
-      color: #ECE6E6;
+      color: #fff;
       line-height: 31px;
 }
 
 .general .anchor {
     text-decoration: none;
-    background: #4db5ff;
+    background: #3A86FF;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: bolder;
@@ -791,7 +789,7 @@ input[type=checkbox] {
     margin-top:-22rem;
     font-size: 36px;
     line-height: 43px;
-    color: #5353ff;
+    color: #3A86FF;
 }
 
  .third-section .speech3 h3 {
@@ -800,7 +798,7 @@ input[type=checkbox] {
     font-size: 36px;
     line-height: 43px;
     padding-bottom: 0.5rem;
-    color: #5353ff;
+    color: #3A86FF;
 }
 
 .third-section .speech p {
@@ -818,12 +816,12 @@ input[type=checkbox] {
     margin-left:12rem;
 }
  .third-section  .speech2 h3 {
-    color :#5353ff ;
+    color :#3A86FF ;
     display:none;
 
 }
 .third-section  .speech2 h2 {
-    color :#5353ff ;
+    color :#3A86FF ;
       margin-left:-12rem;
     font-size: 26px;
    max-width:360px;
@@ -870,8 +868,6 @@ width:100%;
 .aboutblab{
     max-width:450px;
     margin-top: 1rem;
-    border: 5px solid blue;
-    background-color: #4db5ff;
     margin-left: 0rem;
     margin-right: 0rem;
     border-top-left-radius: 50px;
@@ -884,7 +880,7 @@ width:100%;
     height:70%;
     margin-left: 6rem;
     border-radius: 50%;
-    border: 2px solid yellow;
+    border: 2px solid #fff;
 }
 
 .abpix{
@@ -926,7 +922,7 @@ width:100%;
 
         display: inline-block;
 
-        background-color: #4c9e9e;
+        background-color: #1976D2;
 
         transition: 0.3s ease;
 
@@ -947,7 +943,7 @@ width:100%;
     .hamburger {
 
         display: block;
-        color :#4db5ff
+        color :#3A86FF
 
     }
 
@@ -966,16 +962,16 @@ width:100%;
     margin-right:0rem;
     margin-left:0rem;
     min-width:350px;
-    font-family: 'DM Sans';
+    font-family:'Courier New', Courier, monospace;
     font-weight: 700;
-      color: #ECE6E6;
+      color: #fff;
       line-height: 31px;
 }
 
 .general .anchor {
     text-decoration: none;
-    background: #4db5ff;
-    font-family: 'Poppins';
+    background: #3A86FF;
+    font-family:'Courier New', Courier, monospace
     font-style: normal;
     font-weight: bolder;
     font-size: 13px;
@@ -1019,7 +1015,7 @@ width:100%;
     margin-top:-22rem;
     font-size: 36px;
     line-height: 43px;
-    color: #5353ff;
+    color: #3A86FF;
 }
 
  .third-section .speech3 h3 {
@@ -1028,7 +1024,7 @@ width:100%;
     font-size: 36px;
     line-height: 43px;
     padding-bottom: 0.5rem;
-    color: #5353ff;
+    color: #3A86FF;
 }
 
 .third-section .speech p {
@@ -1046,12 +1042,12 @@ width:100%;
     margin-left:12rem;
 }
  .third-section  .speech2 h3 {
-    color :#5353ff ;
+    color :#3A86FF ;
     display:none;
 
 }
 .third-section  .speech2 h2 {
-    color :#5353ff ;
+    color :#3A86FF ;
       margin-left:-12rem;
     font-size: 26px;
    max-width:360px;
@@ -1098,8 +1094,6 @@ width:100%;
 .aboutblab{
     max-width:450px;
     margin-top: 1rem;
-    border: 5px solid blue;
-    background-color: #4db5ff;
     margin-left: 0rem;
     margin-right: 0rem;
     border-top-left-radius: 50px;
@@ -1112,7 +1106,7 @@ width:100%;
     height:70%;
     margin-left: 6rem;
     border-radius: 50%;
-    border: 2px solid yellow;
+    border: 2px solid #fff;
 }
 
 .abpix{

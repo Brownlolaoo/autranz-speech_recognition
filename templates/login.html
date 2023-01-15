@@ -7,40 +7,40 @@
     </head>
     <body>
 
-        <div class="v3_67">
+        <div class="top-frame">
 
 
 
-            <div class="v3_94">
+            <div class="topframe-label">
             <div class="otro">
-                <span class="v3_69">AuTranz</span>
-                <span class="v3_109">Speak, See</span>
+                <span class="autranz-label">AuTranz</span>
+                <span class="speaksee-label">Speak, See</span>
                 </div>
 
-                <div class="v3_68">
-                    <span class="v3_111">Sign in and transcribe</span>
+                <div class="signin-frame">
+                    <span class="signin-label">Sign in and transcribe</span>
                 </div>
                 <span class="v3_70"></span>
-                  <div class="vn3_70">
+                  <div class="img-label">
                   <img class="load" src="{{url_for('static', filename = 'images/speak1.jpg')}}">
                 </div>
             </div>
 
             <div class="pogin" >
-                     <span class="v3_96">Hello! welcome back</span>
+                     <span class="welcome-label">Hello! welcome back</span>
                      <div class="msg">{{ msg }}</div>
 
             <div class="v3_97">
             <form action="{{ url_for('login') }}" method="post">
 
-        <input class="v3_99" id="username" name="username" type="text" placeholder="Username" class="textbox" required/>
+        <input class="username-input" id="username" name="username" type="text" placeholder="Username" class="textbox" required/>
                 <div class="v3_145">
                     <div class="v3_143"></div>
                     <div class="v3_144"></div>
                 </div>
             </div>
             <div class="v3_98">
-                   <input class="v3_103" id="password" name="password" type="password" placeholder="Password" class="textbox"/></br></br>
+                   <input class="passwrd-input" id="password" name="password" type="password" placeholder="Password" class="textbox"/></br></br>
                <div class="v3_149">
                <div class="v3_147">
                </div>
@@ -48,18 +48,18 @@
                 <div class="v3_148">
             </div>
         </div>
-                 <span class="v3_105">Forgot password?</span>
+                 <span class="forgotpasswrd-label">Forgot password?</span>
 
                <div class="v3_106">
 
-                <input  type="submit"  class="v3_108" value="LOGIN">
+                <input  type="submit"  class="login-label" value="LOGIN">
                 </div>
                </form>
 
-                <span class="v5_225">Continue with</span>
+                <span class="cont-label">Continue with</span>
 
 
-                <div class="v7_249">
+                <div class="social-input">
                     <div class="v7_250">
                         <a href="www.google.com" ><img class="facebook" src="{{url_for('static', filename = 'images/LOGIN1.png')}}"></a>
                     </div>
@@ -73,7 +73,7 @@
                     </div>
                 </div>
 
-                <p class="v7_270">don’t have an account? <a  href="{{url_for('signup')}}"> Sign up</a></p>
+                <p class="account-label">don’t have an account? <a  href="{{url_for('signup')}}"> Sign up</a></p>
             </div>
             </div>
 
